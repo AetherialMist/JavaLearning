@@ -155,13 +155,13 @@ in any language.
 
 Now as humans, we can figure out I _meant_ to say "The lazy dog jumped over the fence." That is great and all for us,
 but computers are not good at understanding what we _meant_ to say. Computers are very literal when it comes to the
-other of words and symbols used. Hence, ORDER MATTERS. As you write more and more Java code files, you will understand
+order of words and symbols used. Hence, ORDER MATTERS. As you write more and more Java code files, you will understand
 more and more of the Java syntax.
 
 ### Public Static Void WHAT???
 
 We have a Class file now, yay! But it is empty, and that little play button at the top is still grayed out, let's fix
-that! Add the following to you code file:
+that! Add the following to your code file:
 
 ```java
 package aetherial;
@@ -278,3 +278,5 @@ the practice some more, and then practice even more after that, and then... gett
 an expert programmer that understands everything over a single night. Yes some people have a "natural talent" for
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
+
+Onto [Lesson 2](../lesson-002/lesson-002.md)!
