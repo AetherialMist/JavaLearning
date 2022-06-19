@@ -145,7 +145,8 @@ You can try this yourself, or just take my word (I promise I'm good for it!).
 Intellij will handle a lot of _format_ automatically while you type. A generally good "coding practice" (you will hear
 this phrase a _lot_), is to "reformat" your code regularly.
 
-1. Make sure you do not have anything highlight with your mouse cursor. Just have the blinking little text cursor at the
+1. Make sure you do not have anything highlighted with your mouse cursor. Just have the blinking little text cursor 
+   at the
    end of a line anywhere in the file.
 2. At the very top from the Menu Bar, navigate to `Code -> Reformat Code` and select it (`left-click`).
 3. Intellij will do all the hard word to format your code back to a human-readable format!
@@ -172,7 +173,7 @@ In this lesson, you learned about:
 ## Next Steps
 
 This was a lot of information to take in at once. I encourage you to re-read through this lesson a few times, as we are
-going to be expanding on this knowledge in all future lessons. Programming builds on top of itself, what you learn on
+going to be expanding on this knowledge in all future lessons. Programming builds on top of itself. What you learn on
 day 1, will be used every single day after that, and the same goes for day 2, day 3, day 4, ... day when you stop
 programming (hopefully you never give up!).
 
@@ -183,3 +184,5 @@ that important!
 
 Time to head to [Lesson 3](../lesson-003/lesson-003.md)! (Feel free to take breaks, get up and stretch, refill your
 water, etc.!)
+
+[Completed Code](completed)

@@ -280,6 +280,11 @@ Process finished with exit code 0
 
 Hello to you too little program!
 
+## Completed Lessons
+
+Anytime there is code involved (almost all lessons), a completed project will be included which you can reference if 
+you ever get stuck. There will be a hyperlink at the bottom of each lesson leading to the completed code.
+
 ## Recap
 
 Things you have learned and will be assumed you can do on your own in the future (you can always come back here to
@@ -302,3 +307,5 @@ programming and will learn it faster, but do NOT be discouraged. It takes time, 
 practice!
 
 Onto [Lesson 2](../lesson-002/lesson-002.md)!
+
+[Completed Code](completed)
