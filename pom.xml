@@ -7,13 +7,10 @@
     <groupId>aetherial</groupId>
     <artifactId>java-learning</artifactId>
     <version>${revision}</version>
-    <modules>
-        <module>lessons</module>
-    </modules>
     <packaging>pom</packaging>
 
     <properties>
         <revision>1.0.0</revision>
     </properties>
-    
+
 </project>
