@@ -256,16 +256,16 @@ public class HelloWorld {
 
 #### Usage
 
-`System.out.println` is the first piece of Java code almost everyone learns, and everyone continues to use it until 
-they stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_ 
+`System.out.println` is the first piece of Java code almost everyone learns, and everyone continues to use it until they
+stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_
 lesson, and even in programming careers.
 
 ### Okay some of those words I understand, Hello and world...
 
 Again, I am sorry, but more hand wavy magic that will be explained later. For now, just understand that anything inside
-the parenthesis and quotation marks of `System.out.println("")` will appear in the output you saw before. Another 
-small, but very important piece to remember, is that almost every line of code inside those inner curly braces needs 
-to end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
+the parenthesis and quotation marks of `System.out.println("");` will appear in the output you saw before. Another
+small, but very important piece to remember, is that almost every line of code inside those inner curly braces needs to
+end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
 
 You may have noticed that the little play button at the top is no longer grayed out. By pushing the play button on the
 side which you did earlier, you have now told Intellij _where_ the entry point to your program is. Now you can click the
@@ -282,7 +282,7 @@ Hello to you too little program!
 
 ## Recap
 
-Things you have learned and will be assumed you can do on your own in the future (you can always come back here to 
+Things you have learned and will be assumed you can do on your own in the future (you can always come back here to
 remind yourself!).
 
 * Creating a new project using Intellij IDEA
