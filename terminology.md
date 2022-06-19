@@ -1,0 +1,30 @@
+# Terminology
+
+**You can always use [Google](https://google.com) for more information!**
+
+## Acronyms
+
+| Acronym | Full Words                         | Description                                                                                                                                                             |
+|---------|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| LTS     | Long Term Support                  | Usually refers to a software or digital platform version that will be improved upon <br> and receive maintenance and bug fixes regularly.                               |
+| IDE     | Integrated Development Environment | Usually refers to a software or digital platform that makes programming easier. It <br> handles most of the complicated steps required to actually create your program. |
+| OS      | Operating System                   | This is the software that controls your entire computer or digital device: Microsoft <br> Windows, MacOS, Linux, etc.                                                   |
+| JVM     | Java Virtual Machine               | This is the software that actually runs compiled Java code.                                                                                                             |
+
+# Terms
+
+| Term        | Descriptions                                                                                                                                                                                                                                                                                                          |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Source code | This is the collection of files which defines how a program runs.                                                                                                                                                                                                                                                     |
+| Open-source | Source code that can viewed by anyone, and is willing to accept public contributions of changes.                                                                                                                                                                                                                      |
+| Compile     | Source code is human readable, not machine readable. To bridge the gap, we "compile" our code using <br> special programs called "compilers". Compilers turn simple text files (source code) into something that <br>the computer understands.                                                                        |
+| Library     | In programming, this refers to already compiled code that you can add and use in your program. In <br> many programming languages, there are core libraries that are always present.                                                                                                                                  |
+| Bloat-ware  | Unwanted software that gets installed on your computer. Most of the time, it is software you will <br> never use, and it slows down your computer.                                                                                                                                                                    |
+| Byte-code   | Compiled code that the computer understands, typically only `1`s and `0`s.                                                                                                                                                                                                                                            |
+| Framework   | Software built on top of either a base programming language, or another framework (it's frameworks <br> all the way down!). This software is then meant for you to build your program on top of! It usually <br> greatly expands on the base functionality of whatever language or framework it itself is built over. |
+| Metadata    | Data about data. For example: when you take a picture using a cell phone, the phone automatically includes <br> additional data such as: timestamp, possible the location if geo-location is enabled, the resolution of <br> the image, etc.                                                                          |
+| Syntax      | You can think of this as the same thing as "grammar" of human languages, but is a broader term.                                                                                                                                                                                                                       |
+|             |                                                                                                                                                                                                                                                                                                                       |
+|             |                                                                                                                                                                                                                                                                                                                       |
+|             |                                                                                                                                                                                                                                                                                                                       |
+
