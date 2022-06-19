@@ -47,14 +47,14 @@ You may have noticed that there is a **lot** of overlap between the number types
 between them? Well that is one very complicated question to answer fully, the short answer though, is that Java will
 make _assumptions_ about the exact type of number being used.
 
-Without additional information about which type a number is (we will learn about how to do this soon), here are the
+Without additional information about which type something is (we will learn about how to do this soon), here are the
 basic assumptions Java will use:
 
 * Any whole number is an `int` (you can NOT have a decimal point!!!)
 * Any decimal number is a `double`
 * Anything between double quotes is a `String`
 * `true` and `false` are `booleans` (unless between double quotes!)
-* Any single character being single quotes is a `char`
+* Any single character between single quotes is a `char`
     * If you try putting more than a single character between single quotes, you will get a "syntax error"
 
 And in most cases, this is completely correct!
