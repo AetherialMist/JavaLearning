@@ -250,6 +250,16 @@ public class HelloWorld {
 }
 ```
 
+#### Equivalent verbiage
+
+`System.out.println` == "System dot out dot print line" == Printing to the console
+
+#### Usage
+
+`System.out.println` is the first piece of Java code almost everyone learns, and everyone continues to use it until 
+they stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_ 
+lesson, and even in programming careers.
+
 ### Okay some of those words I understand, Hello and world...
 
 Again, I am sorry, but more hand wavy magic that will be explained later. For now, just understand that anything inside
