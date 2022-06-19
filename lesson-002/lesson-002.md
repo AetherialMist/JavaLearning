@@ -1,4 +1,4 @@
-# Lesson 2 - Types and Objects
+# Lesson 2 - Intro to Types
 
 ## Types in the real world
 
