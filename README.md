@@ -11,3 +11,4 @@ able to split lessons into bite-sized chunks allows them to start and stop as th
 * [Lesson 0](lesson-000/lesson-000.md) - Getting ready to code!
 * [Lesson 1](lesson-001/lesson-001.md) - Hello World! First Java program
 * [Lesson 2](lesson-002/lesson-002.md) - Intro to Types
+* [Lesson 3](lesson-003/lesson-003.md) - Intro to Types Part 2
