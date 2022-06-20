@@ -36,8 +36,8 @@ Whoa! What in the world is "Modulo"??? The `%` operator is mostly used with Inte
 not have factions, so while division gives you how many times the second number fits in the first number, modulo gives
 you the remainder. So `7 / 4` we know would be `1.75`, but Integer math does not allow that! Instead, we will find that
 Java treats `7 / 4` as `1`, because `4` only fits into `7` one time. If we use the _modulo_ operator instead, so `7 % 4`
-we end up with `3`! We took out as many "fours" as we could from `7` and we were left with `3`. For this reason, _
-modulo_ is often called the _remainder_ operator.
+we end up with `3`! We took out as many "fours" as we could from `7` and we were left with `3`. For this reason,
+_modulo_ is often called the _remainder_ operator.
 
 ## Oder of Operations
 
@@ -47,7 +47,7 @@ in that exact order. Java works ever so slightly differently!
 
 1. Parenthesis
 2. Multiplication and Division, left to right (we will show this soon)
-3. Addition and Subtraction, left to right (we will show this soon too)
+3. Addition and Subtraction, left to right
 
 Java does not have a nice symbol used for exponents, unfortunately that process is a bit more complicated and will be
 introduced in a later lesson.
@@ -141,6 +141,20 @@ that did not happen! Instead, we got:
 
 `6 / 4 * 3` --> `1 * 3` --> `3`
 
+Finally, some parenthesis! `5 * (2 + 3)` notice how we MUST but the `*` between the `5` and `(`. In regular math, we can
+use a shorthand like `5(2 + 3)`, but Java does not understand this!
+
+Output
+
+```text
+19
+2
+4
+8
+3
+25
+```
+
 ### Current Program
 
 ```java
@@ -154,6 +168,7 @@ public class PrintingMath {
         System.out.println(14 % 5);
         System.out.println(6 * 4 / 3);
         System.out.println(6 / 4 * 3);
+        System.out.println(5 * (2 + 3));
     }
 
 }
@@ -163,8 +178,8 @@ public class PrintingMath {
 
 Keep all your print statements from Integer Math, we are just going to keep adding more!
 
-To use `double`s instead of `int`s, just add a decimal place! We will not be using modulo with `double`s, and you 
-will see _why_ in a few seconds (it's not accurate at all).
+To use `double`s instead of `int`s, just add a decimal place! We will not be using modulo with `double`s, and you will
+see _why_ in a few seconds (it's not accurate at all).
 
 * `5.0 + 3.0`
 * `5.0 + 3.87`
@@ -174,7 +189,7 @@ will see _why_ in a few seconds (it's not accurate at all).
 * `5.1 / 2.5`
 * `5.0 / 3.5`
 
-WARNING: We are going to get some _weird_ results.
+**_WARNING_**: We are going to get some _weird_ results.
 
 Output
 
@@ -191,14 +206,15 @@ Output
 
 You may not even get the exact same results shown here!
 
-**_WHAT IS HAPPENING, THAT IS NOT MATH!?!?!_**
+**_WHAT IS HAPPENING? THAT IS NOT MATH!_**
 
 It's okay, take deep breaths! Let's talk about this.
 
-The problem originates from the fact computers only understand `1`s and `0`s. Decimal points don't exist in that 
-format. So `double`s and `float`s are both treated as "floating point numbers", the key word being "floating", not 
-precise. Later we will introduce a special _type_ that can retain exact precision of decimal numbers. But for now, 
-we will just continue using `double`s.
+The problem originates from the fact computers only understand `1`s and `0`s. Decimal points don't exist in that format.
+So `double`s and `float`s are both treated as "floating point numbers", the key word being "floating", not precise.
+Later we will introduce a special _type_ that can retain exact precision of decimal numbers. But for now, we will just
+continue using `double`s. You can use our good friend Google, to learn more about why Java floating point numbers are
+not very accurate.
 
 ### Current Program
 
@@ -213,6 +229,7 @@ public class PrintingMath {
         System.out.println(14 % 5);
         System.out.println(6 * 4 / 3);
         System.out.println(6 / 4 * 3);
+        System.out.println(5 * (2 + 3));
 
         System.out.println(5.0 + 3.0);
         System.out.println(5.0 + 3.87);
@@ -257,12 +274,17 @@ Hello42.0
 Hello123.5
 ```
 
-So it looks like anytime there is a `double` in the equation, the result is still a `double` (ignoring the last two 
-lines!).
+So it looks like anytime there is a `double` in the equation, the result is still a `double` (ignoring the lines
+with `String`s!).
 
-Now what happened in those last two lines? In the top one, we can see Java did the multiplication first, but then 
-_added_ a `String` with a `double`, and the final result was a `String`. In the bottom line, no math was actually 
-done, the numbers were just added to the end of the `Stirng`! What is happening!?!?
+Now what happened in those lines with `String`s?
+
+* `"Hello" + ", world!"` The `String`s were combined into one big `String`
+* `"Hello" + 12` The `12` was just added to the end of the `String`
+* `"Hello" + 12 * 3.5` The two numbers were multiplied, then added to the end of the `String`
+* `"Hello" + 12 + 3.5` Each number was added to the end of the `String` on at a time to make one big `String`
+
+**_What is happening!?!?_**
 
 ### Current Program
 
@@ -277,6 +299,7 @@ public class PrintingMath {
         System.out.println(14 % 5);
         System.out.println(6 * 4 / 3);
         System.out.println(6 / 4 * 3);
+        System.out.println(5 * (2 + 3));
 
         System.out.println(5.0 + 3.0);
         System.out.println(5.0 + 3.87);
@@ -301,23 +324,26 @@ public class PrintingMath {
 
 ## Type Promotion
 
-What happened was the header of this new section you're reading: "Type Promotion". This actually happened with just 
+What happened was the header of this new section you're reading: "Type Promotion". This actually happened with just
 the `int` and `double` combined math too, it just wasn't as clear to see.
 
-Java doesn't know how to directly add an `int` with a `double`. But it does know how to add two `double`s together! 
-You can also turn any `int` into a `double` by simply adding `.0` to the end of it! Java knows this too, so Java 
-converts the `int` into a `double` (_promotion_), and **then** does the math. The same applies for all the other 
-math operators.
+Java doesn't know how to directly add an `int` with a `double`. But it does know how to add two `double`s together!
+You can also turn any `int` into a `double` by simply adding `.0` to the end of it! Java knows this too, so Java
+converts the `int` into a `double` (_promotion_), and **then** does the math. The same applies for all the other math
+operators.
 
-In the case of `String`s, this whole time we have been printing number types, and if you recall from the previous 
-lesson, Java will convert the numbers to `String`s in order to print them. This combined with Java's ability to 
-combine, or _add_, `String`s together using the `+` operator, ends with similar logic as above. This process of 
-combining multiple `String`s into one big `String` is called "String Concatenation".
+In the case of `String`s, this whole time we have been printing number types, and if you recall from the previous
+lesson, Java will convert the numbers to `String`s in order to print them. This combined with Java's ability to combine,
+or _add_, `String`s together using the `+` operator, ends with similar logic as above. This process of combining
+multiple `String`s into one big `String` is called "String Concatenation".
 
-Java knows how to _promote_ `double`s and `int`s to `String`s, and combine `String`s together, so that is what Java 
+Java knows how to _promote_ `double`s and `int`s to `String`s, and combine `String`s together, so that is what Java
 does!
 
-Java will automatically _promote_ types when required, but Java can **_NOT_** _demote_ types on its own.
+Java will automatically _promote_ types when required, but Java can **_NOT_** _demote_ types on its own. Remember 
+that Java does follow its own version for "order of operations". You can use Google to see the full list for 
+operation precedence, but there are a _lot_ of operations we have not discussed yet (3 out of 15 if you count 
+parenthesis).
 
 **_"on its own," that means there is a way?_**
 
@@ -334,9 +360,9 @@ In this lesson, you learned about:
 
 ## Next Steps
 
-This lesson started off slow, but that was an interesting finish! I encourage you to experiment with the math 
-operators on your own. What happens if you _add_ a number first with a `String` second? Intellij will go a good job 
-at making sure you don't do something that is not allowed in java (like using multiplication on a `String`), watch 
-for those red squiggles!
+This lesson started off slow, but that was an interesting finish! I encourage you to experiment with the math operators
+on your own. What happens if you _add_ a number first with a `String` second? Intellij will go a good job at making sure
+you don't do something that is not allowed in java (like using multiplication on a `String`), watch for those red
+squiggles!
 
 Once you have satiated your curiosity, move on to the next lesson, [Lesson 4](../lesson-004/lesson-004.md).

@@ -8,6 +8,7 @@ public class PrintingMath {
         System.out.println(14 % 5);
         System.out.println(6 * 4 / 3);
         System.out.println(6 / 4 * 3);
+        System.out.println(5 * (2 + 3));
 
         System.out.println(5.0 + 3.0);
         System.out.println(5.0 + 3.87);
