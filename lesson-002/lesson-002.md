@@ -29,7 +29,9 @@ Java has 8 primitive types:
 * `long` Whole numbers ranging from `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` (inclusive)
 * `float` Decimal numbers with whole numbers equal to an `int` and up to 7 decimal places. (has additional special
   properties discussed later)
+  * Decimal numbers MUST start with a whole number, including `0`. So `0.5` is okay, `.5` is NOT okay.
 * `double` Decimal numbers with whole numbers equal to a `long` and up to 16 decimal places.
+    * Decimal numbers MUST start with a whole number, including `0`. So `0.5` is okay, `.5` is NOT okay.
 * `boolean` Either `true` or `false`, you can think of it as "yes" or "no", but for computers.
 * `char` A single letter, or _character_, between single quotes `'`. Examples: `'A'`, `'9'`, `'Æ'`.
     * **Hey you put a number in there!** No I did not. As soon as I put that single digit "number" between single
