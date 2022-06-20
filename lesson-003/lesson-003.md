@@ -1,5 +1,9 @@
 # Lesson 3 - Intro to Types Part 2
 
+[Previous Lesson - Lesson 2](../lesson-002/lesson-002.md)
+
+[Next Lesson - Lesson 4](../lesson-004/lesson-004.md)
+
 ## Math
 
 No, stop running away! I promise no complicated math! And we'll make Java do all the hard work!

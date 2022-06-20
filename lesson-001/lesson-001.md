@@ -1,5 +1,9 @@
 # Lesson 1 - Hello World
 
+[Previous Lesson - Lesson 0](../lesson-000/lesson-000.md) 
+
+[Next Lesson - Lesson 2](../lesson-002/lesson-002.md)
+
 ## Projects Folder
 
 _yes, plural_

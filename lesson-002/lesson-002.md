@@ -1,5 +1,9 @@
 # Lesson 2 - Intro to Types
 
+[Previous Lesson - Lesson 1](../lesson-001/lesson-001.md)
+
+[Next Lesson - Lesson 3](../lesson-003/lesson-003.md)
+
 ## Types in the real world
 
 In the real world, we have lots of _types_ that we use daily: single words, sentences, paragraphs, whole numbers,
