@@ -246,6 +246,7 @@ Sure did! Let's see what happens!
 Output
 
 ```text
+(leaving out the previous sections)
 9.2
 0.5405405405405405
 1.85
