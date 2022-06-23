@@ -31,7 +31,7 @@ Java onto your computer. So let us install Java to get started.
     * Pay attention to _where_ Java is being installed, as you may need this information later.
         * On Windows, it should install somewhere like `C:\Program Files\Eclipse Adoptium\jdk-VERSION-hotspot`
 
-### Java is installed, now I can program right?!
+**_Java is installed, now I can program right?!_**
 
 If you like suffering, sure. If you have even a shred of dignity, you will also want to install
 an [Integrated Development Environment](../terminology.md) (IDE). Think of this as software that helps you write
@@ -58,6 +58,17 @@ NetBeans, Eclipse, etc. The one this guide uses, and one of the most popular by 
     * The only real reason to get Ultimate is for Spring support (a [framework](../terminology.md) built on Java).
     * Again, you should be fine using all the default installation options, be ever vigilant watching for bloat-ware.
 
-### _Now_ can I finally write a program?
+**_Now can I finally write a program?_**
 
-Yes! But not in this lesson, you are done here, go on to [Lesson 1](../lesson-001)!
+Yes! But not in this lesson.
+
+## Recap
+
+In this lesson, you:
+
+* Installed Java
+* Installed Intellij IDEA
+
+## Next Steps
+
+You are done here, go on to [Lesson 1](../lesson-001)!
