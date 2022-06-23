@@ -33,11 +33,12 @@ Java onto your computer. So let us install Java to get started.
 
 ### Java is installed, now I can program right?!
 
-If you pain and suffering, sure. If you have even a shred of dignity, you will also want to install
+If you like suffering, sure. If you have even a shred of dignity, you will also want to install
 an [Integrated Development Environment](../terminology.md) (IDE). Think of this as software that helps you write
 software. Java text files are exactly just that, text files. They sure are human-readable (hopefully), but the JVM that
-actually runs your code, has absolutely no _idea_ (future pun incoming) what to do with them. You have
-to [compile](../terminology.md) (transform) your text files into special files called "Java
+actually runs your code, has absolutely no _idea_ (future pun incoming) what to do with them. 
+
+You have to [compile](../terminology.md) (transform) your text files into special files called "Java
 [byte-code](../terminology.md)" that the JVM understands and are most definitely not human-readable. We will 
 actually take a quick look at Java byte-code later, so you can see how unreadable it really is.
 
