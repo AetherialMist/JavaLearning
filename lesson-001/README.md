@@ -1,6 +1,6 @@
 # Lesson 1 - Hello World
 
-[Previous Lesson - Lesson 0](../lesson-000) 
+[Previous Lesson - Lesson 0](../lesson-000)
 
 [Next Lesson - Lesson 2](../lesson-002)
 
@@ -13,20 +13,27 @@ programmer's best friend [Google](https://google.com) (sensing a trend yet?).
 
 The first thing you need to do is create a single, dedicated folder for all your projects. This way, all the projects
 are in the same relative space and easy to find. If you scatter projects all over your computer, your future self will
-hate current you. Below are some recommendations on where to create this folder and what to name it:
+be very upset with current you. Below are some recommendations on where to create this folder and what to name it:
 
-#### Windows Location Recommendation
-
-`C:\Users\USER\Documents\JavaProjects`
-
-#### Linux Location Recommendation
-
-`~/javaprojects`
+* Windows: `C:\Users\YOUR_USER\Documents\JavaProjects`
+    1. Assuming you are logged in as you (why wouldn't you be?), Open `File Explorer`
+    2. Go to your `Documents` folder
+    3. Create a new folder called "JavaProjects"
+* Linux: `~/javaprojects`
+    1. Open a terminal
+    2. Run:
+       ```bash
+       $ mkdir ~/javaprojects
+       ```
+* Mac: `/Users/YOUR_USER/Documents/JavaProjects`
+    1. Open `Finder`
+    2. Browse to your `Documents` folder
+    3. Create a new folder called "JavaProjects"
 
 Feel free to put this folder where you want, as long as you remember where. Eventually, you will likely end up with
 dozens, if no hundreds, of sub-folders inside the main projects-folder.
 
-## Intellij Project
+## Create a New Intellij Project
 
 1. Open Intellij Idea
 2. Select: `File -> New -> Project...`
@@ -38,9 +45,9 @@ dozens, if no hundreds, of sub-folders inside the main projects-folder.
     * We will eventually explain build systems in more detail later, at which point we will switch to using `Maven`.
 6. For `JDK`: select Java 17 from the dropdown
     * May show as just "`17`"
-    * May need to select `Add JDK...` and browse to the Java 17 install location that you were told to write down
+    * You may need to select `Add JDK...` and browse to the Java 17 install location that you were told to write down
       earlier.
-        * Probable Location: `C:\Program Files\Eclipse Adoptium\jdk-VERSION-hotspot`
+        * Probable Windows Location: `C:\Program Files\Eclipse Adoptium\jdk-VERSION-hotspot`
 7. Click `Create` at the bottom right.
 
 ![CreateProject](images/CreateHelloWorldProject.png)
@@ -85,14 +92,13 @@ Let's break down some of the basics of an Intellij IDEA project window.
 
 ### First Package
 
-We are going to create the "root package" of your project. You can think of a "package" as a fancy folder for Java. If
+We are going to create the "root package" of your project. You can think of a _package_ as a fancy folder for Java. If
 you open a file browser, you will see that your OS interprets it as a normal folder. But it is different! I promise!
 
 You can `right-click` on the `src` folder in the "Project" side window, and navigate to `New -> Package` and select
-`Package`. In the center of the Intellij window should appear a little text box, and you can enter the name for your new
-Package and then press the `Enter` key on your keyboard. For simplicity right now, just use your first or last name
-using ALL LOWERCASE letters
-(yes I understand the irony of what I just did).
+`Package`. In the center of the Intellij window should appear a little text box. For simplicity right now, type in your
+first or last name using ALL LOWERCASE letters (yes I understand the irony of what I just did), then press the
+`Enter` key on your keyboard.
 
 ![CreatePackage](images/CreatePackage.png)
 
@@ -107,9 +113,14 @@ looks and behaves like a regular folder, but it is a _special_ Java folder. Reme
 code inside the `src` folder will be compiled? So will any code files inside _packages_ and _sub-packages_
 under the `src` folder!
 
-If you were to create a regular folder under `src`, Intellij won't know what to do with it, so regular folders are
-ignored. This means you MUST create packages using the User Interface (UI) of Intellij, and NOT your file browser or
-terminal!
+If you were to create a folder under `src` not using Intellij (File Explorer, terminal, or Finder), Intellij will
+automatically know that the new folder should be treated as a package.
+
+**_I thought you said packages were different from folders!_**
+
+This starts getting complicated, _really_ complicated, to explain. The short version is: packages are the folder
+structure for compiled code. They allow you to define _namespaces_ where your Java code exists, this helps prevent the
+JVM from being confused with where exactly the code is located. We will discuss this more in-depth in a later lesson.
 
 ![PackageCreated](images/PackageCreated.png)
 
@@ -127,10 +138,10 @@ You should now have a file named "HelloWorld" created and open in the center win
 
 ### What is a Class?
 
-Whoa! Slow down! What is a Class file? And what are those other options about?
+**_Whoa! Slow down! What is a Class file? And what are those other options about?_**
 
-This is a very in-depth topic that will be covered later. For now, just understand that "Class files" are your Java code
-files that will be compiled and ran.
+This is also very in-depth topic that will be covered later. For now, just understand that "Class files" are your Java
+code files that will be compiled and ran.
 
 Now let's break down this file's anatomy a little
 
@@ -142,13 +153,15 @@ public class HelloWorld {
 }
 ```
 
-1. "package aetherial"
+1. `package aetherial`
     * This fancy Class file knows where it is inside the `package` hierarchy. Neat! This becomes very important later
       on.
-2. "public class HelloWorld {"
-    * This is part of the Java [syntax](../terminology.md). The name of the file and the name of the Class MUST match!
-3. The remaining "}"
-    * This is also part of the Java syntax.
+2. `public class HelloWorld {`
+    * This is part of the Java [syntax](../terminology.md). The name of the file and the name of the Class (the word, or
+      words with no spaces between them, directly after `public class`) MUST match!
+3. The remaining curly-bracket `}`
+    * This is also part of the Java syntax. Every opening curly-bracket `{` needs a buddy closing curly bracket `}`
+      that comes after the opening one!
 
 ### Syntax? I hate taxes!
 
@@ -159,13 +172,13 @@ in any language.
 
 Now as humans, we can figure out I _meant_ to say "The lazy dog jumped over the fence." That is great and all for us,
 but computers are not good at understanding what we _meant_ to say. Computers are very literal when it comes to the
-order of words and symbols used. Hence, ORDER MATTERS. As you write more and more Java code files, you will understand
-more and more of the Java syntax.
+order of words and symbols used. Hence, **ORDER MATTERS**. As you write more and more Java code files, you will
+understand more and more of the Java syntax.
 
 ### Public Static Void WHAT???
 
 We have a Class file now, yay! But it is empty, and that little play button at the top is still grayed out, let's fix
-that! Add the following to your code file:
+that! Make the inside of you _class_ look like the following:
 
 ```java
 package aetherial;
@@ -189,20 +202,20 @@ explained later!
 Yes, I promise! Assuming you continue this guide and learning about Java that is.
 
 For now, we are going to pretend that only code written between those inner curly-braces after "public static void main(
-String[] args)" `{` and `}` will be run.
+String[] args)" `{` and before its closing buddy `}` will be run.
 
 ### Play Button
 
-You may have noticed a little play button has appeared next to both "public class HelloWorld" and "public static void
-main".
+You may have noticed a little play button has appeared next to both `public class HelloWorld` and
+`public static void main`.
 
 ![PlayButtons](images/PlayButton.png)
 
-This is because "public static void main(String[] args)" is the starting point for any and all Java programs! Inside
+This is because `public static void main(String[] args)` is the starting point for any and all Java programs! Inside
 the `src` folder, there should be exactly `0` or `1` of these lines in your code.
 
 Intellij gives you two options for how you want to run your program from this window. You can click either, it really
-does not matter, I am going to click on the one next to the line with "public class". When you click one of these
+does not matter, I am going to click on the one next to the line with `public class`. When you click one of these
 buttons, you will get a little pop-up menu with several options, just select the regular "Run" option which should
 appear as the top most option.
 
@@ -220,8 +233,8 @@ Process finished with exit code 0
 ```
 
 You have successfully built, compiled, and executed your first program! Remember from
-[Lesson 0](../lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE
-will take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
+[Lesson 0](../lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE will
+take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
 
 You may have noticed a new folder called `out` that appeared in your project window. This is where the compiled code
 lives. If you open the folder in Intellij and find your HelloWorld Class file, you will likely see it looks almost
@@ -231,8 +244,8 @@ nonsense.
 
 ![CompiledCode](images/CompiledCode.png)
 
-This is your OS's attempt at displaying the compiled code file using regular english letters. Compiled code is meant for
-your computer to understand, NOT you! That is why we have special programs called [compilers](../terminology.md)
+This is your OS's attempt at displaying the compiled Java byte-code file using regular english letters. Compiled code is
+meant for the JVM to understand, NOT you! That is why we have special programs called [compilers](../terminology.md)
 that convert human-readable files, into computer-readable files. There are also de-compilers that do their best to
 reverse the process, but they are not always perfect.
 
@@ -241,6 +254,8 @@ reverse the process, but they are not always perfect.
 This is not a very exiting program, as it does literally nothing. I mentioned before that only code inside those inner
 curly braces would be executed. We never put any code inside there, so the program did _nothing_ (and it did a really
 good job of it!). But let's add something, the ultimate beginner program logic!
+
+Add `System.out.println("Hello world!");` inside those inner curly-braces on the empty line!
 
 ```java
 package aetherial;
@@ -260,18 +275,18 @@ public class HelloWorld {
 
 #### Usage
 
-`System.out.println` is the first piece of Java code almost everyone learns, and everyone continues to use it until they
-stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_
+`System.out.println()` is the first piece of Java code almost everyone learns, and everyone continues to use it until
+they stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_
 lesson, and even in programming careers.
 
-### Okay some of those words I understand, Hello and world...
+### Okay some of those words I understand, "Hello" and "world"...
 
 Again, I am sorry, but more hand wavy magic that will be explained later. For now, just understand that anything inside
 the parenthesis and quotation marks of `System.out.println("");` will appear in the output you saw before. Another
 small, but very important piece to remember, is that almost every line of code inside those inner curly braces needs to
 end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
 
-You may have noticed that the little play button at the top is no longer grayed out. By pushing the play button on the
+You may have noticed that the little play button at the top is no longer grayed out! By pushing the play button on the
 side which you did earlier, you have now told Intellij _where_ the entry point to your program is. Now you can click the
 same play button as earlier, or the play button at the top!
 
@@ -286,8 +301,8 @@ Hello to you too little program!
 
 ## Completed Lessons
 
-Anytime there is code involved (almost all lessons), a completed project will be included which you can reference if 
-you ever get stuck. There will be a hyperlink at the bottom of each lesson leading to the completed code.
+Anytime there is code involved (almost all lessons), a completed project will be included which you can reference if you
+ever get stuck. There will be a hyperlink at the bottom of each lesson leading to the completed code.
 
 ## Recap
 
@@ -298,6 +313,7 @@ remind yourself!).
 * Creating Packages
 * Creating a single Class file with `main` to run your program
 * Printing words to the output (also called "console")
+* Compiled code is mostly unreadable
 
 ## Next steps
 
