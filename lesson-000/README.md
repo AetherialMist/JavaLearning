@@ -1,6 +1,6 @@
 # Lesson 0 - Integrated Development Environment (IDE)
 
-[Next Lesson - Lesson 1](../lesson-001/lesson-001.md)
+[Next Lesson - Lesson 1](../lesson-001/README.md)
 
 ## Terminology
 
@@ -62,4 +62,4 @@ NetBeans, Eclipse, etc. The one this guide uses, and one of the most popular by 
 
 ### _Now_ can I finally write a program?
 
-Yes! But not in this lesson, you are done here, go on to [Lesson 1](../lesson-001/lesson-001.md)!
+Yes! But not in this lesson, you are done here, go on to [Lesson 1](../lesson-001)!

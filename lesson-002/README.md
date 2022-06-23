@@ -1,8 +1,8 @@
 # Lesson 2 - Intro to Types
 
-[Previous Lesson - Lesson 1](../lesson-001/lesson-001.md)
+[Previous Lesson - Lesson 1](../lesson-001)
 
-[Next Lesson - Lesson 3](../lesson-003/lesson-003.md)
+[Next Lesson - Lesson 3](../lesson-003)
 
 ## Types in the real world
 
@@ -188,7 +188,7 @@ next topic, rinse and repeat; programming will always reuse previously learned i
 that new information will get reused, and so on. So why did I basically just say the same thing twice? Because it is
 that important!
 
-Time to head to [Lesson 3](../lesson-003/lesson-003.md)! (Feel free to take breaks, get up and stretch, refill your
+Time to head to [Lesson 3](../lesson-003)! (Feel free to take breaks, get up and stretch, refill your
 water, etc.!)
 
 [Completed Code](completed)

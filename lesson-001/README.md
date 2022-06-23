@@ -1,8 +1,8 @@
 # Lesson 1 - Hello World
 
-[Previous Lesson - Lesson 0](../lesson-000/lesson-000.md) 
+[Previous Lesson - Lesson 0](../lesson-000) 
 
-[Next Lesson - Lesson 2](../lesson-002/lesson-002.md)
+[Next Lesson - Lesson 2](../lesson-002)
 
 ## Projects Folder
 
@@ -220,7 +220,7 @@ Process finished with exit code 0
 ```
 
 You have successfully built, compiled, and executed your first program! Remember from
-[Lesson 0](../lesson-000/lesson-000.md) how I told you not to worry about manually compiling your code because the IDE
+[Lesson 0](../lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE
 will take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
 
 You may have noticed a new folder called `out` that appeared in your project window. This is where the compiled code
@@ -310,6 +310,6 @@ an expert programmer that understands everything over a single night. Yes some p
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
 
-Onto [Lesson 2](../lesson-002/lesson-002.md)!
+Onto [Lesson 2](../lesson-002)!
 
 [Completed Code](completed)
