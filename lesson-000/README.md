@@ -73,7 +73,7 @@ NetBeans, Eclipse, etc. The one this guide uses, and one of the most popular by 
       will be optional lessons much, much, much later on.
     * Again, you should be fine using all the default installation options, be ever vigilant watching for bloat-ware.
 
-#### Intellij IDEA has been installed!
+### Intellij IDEA has been installed!
 
 **_Now can I finally write a program?_**
 
