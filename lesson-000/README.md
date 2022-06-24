@@ -7,6 +7,15 @@
 See the [terminology](../terminology.md) page. The first time unfamiliar terminology is used, there will usually be a
 hyperlink to the terminology page. If not, there is always [Google](https://google.com).
 
+## Conversation
+
+I will occasionally have a conversation pretending to be you talking to me. I promise I'm not crazy, at least not in my
+opinion.
+
+> _When I pretend to be you, asking a question or complaining about something, it will appear like this!_
+
+And I will usually put my response to _your_ question or statement right below.
+
 ## Getting Started
 
 Sure you could write raw Java files using Microsoft Notepad, but you will not be able to run the code unless you install
@@ -21,11 +30,6 @@ Java onto your computer. So let us install Java to get started.
     * What is Adoptium? It is an [open-source](../terminology.md) implementation of Java.
     * Why use Adoptium? Because it is free and widely used by the Java community. Otherwise, you have to pay money to
       Oracle, and nobody wants to do that when there is a perfectly good, free version available.
-    * **_Why do I need to install Java, I thought it was a programming language for files?_** Well yes, kind of. What
-      you are installing is called the [Java Virtual Machine](../terminology.md) (JVM). The JVM is what actually runs
-      your code; there are some steps in-between, but we will cover that much later. On top of that, you are downloading
-      the Java core library. Java contains a massive [library](../terminology.md) of code that you use to crete your
-      code. Trust me, you do _not_ want to start from the very bottom.
 2. Run the downloaded installer. You should be fine to accept all the defaults.
     * Be careful of any [bloat-ware](../terminology.md), and make sure to uncheck it!
         * Usually asks questions such as: "Would you also like to install this other software while we install what you
@@ -42,6 +46,19 @@ Java onto your computer. So let us install Java to get started.
    # Verify using:
    $ java -version
    ```
+
+---
+
+> _Why do I need to install Java, I thought it was a programming language, used to write fancy text files?_
+
+Well yes, kind of. What you are installing is called the [Java Virtual Machine](../terminology.md) (JVM). The JVM is
+what actually runs your code; there are some steps in-between, but we will cover that much later. On top of that, you
+are downloading the Java core library. Java contains a massive [library](../terminology.md) of code that you use to
+crete your code. Trust me, you do _not_ want to start from the very bottom.
+
+As of writing this guide, Java 17 is the latest LTS version. So this guide will assume _at least_ the capabilities 
+of version 17. When newer LTS versions are released, they generally only **add** more functionality to the language, 
+rarely are features ever changed significantly or removed.
 
 ### Java has been installed!
 
