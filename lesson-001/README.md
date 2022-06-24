@@ -1,15 +1,15 @@
 # Lesson 1 - Hello World
 
-| Previous Lesson           |                Next Lesson |
-|:--------------------------|---------------------------:|
-| [Lesson 0](../lesson-000) |  [Lesson 2](../lesson-002) |
+|      Previous Lesson      |        Next Lesson         |
+|:-------------------------:|:--------------------------:|
+| [Lesson 0](../lesson-000) | [Lesson 2](../lesson-002)  |
 
 ## Projects Folder
 
 _yes, plural_
 
 This guide assumes you know how to create folders, or directories, on your computer. If you don't, please meet every
-programmer's best friend [Google](https://google.com) (sensing a trend yet?).
+programmer's best friend [Google](https://google.com).
 
 The first thing you need to do is create a single, dedicated folder for all your projects. This way, all the projects
 are in the same relative space and easy to find. If you scatter projects all over your computer, your future self will
@@ -31,7 +31,7 @@ be very upset with current you. Below are some recommendations on where to creat
     3. Create a new folder called "JavaProjects"
 
 Feel free to put this folder where you want, as long as you remember where. Eventually, you will likely end up with
-dozens, if no hundreds, of sub-folders inside the main projects-folder.
+dozens, if not hundreds, of sub-folders inside this projects-folder.
 
 ## Create a New Intellij Project
 
@@ -40,28 +40,29 @@ dozens, if no hundreds, of sub-folders inside the main projects-folder.
     * If no open projects are cached, you may have a special starting menu with a `New Project` button or something
       similar.
 3. Name this project: "HelloWorld"
+    * Make sure there are no spaces!
 4. Make sure the `Location` is inside your projects-folder created earlier.
-5. For the `Build System`: select `Intellij`
+    * For Windows and Mac users, the start may be replaced with `~\Documents\`, and that is okay.
+5. Make sure the `Language` selected is `Java`.
+6. For the `Build System`: select `Intellij`
     * We will eventually explain build systems in more detail later, at which point we will switch to using `Maven`.
-6. For `JDK`: select Java 17 from the dropdown
+7. For `JDK`: select Java 17 from the dropdown
     * May show as just "`17`"
     * You may need to select `Add JDK...` and browse to the Java 17 install location that you were told to write down
       earlier.
         * Probable Windows Location: `C:\Program Files\Eclipse Adoptium\jdk-VERSION-hotspot`
-7. Click `Create` at the bottom right.
+8. Click `Create` at the bottom right.
 
 ![CreateProject](images/CreateHelloWorldProject.png)
-
-**Note**:
-You may notice that my projects-folder is at `D:\Gits`. I am using Windows, and have a second storage drive in my
-computer. If you have already downloaded this guide onto your computer, you are welcome to create HelloWorld right here!
-Don't worry if you haven't though, we will get there in a later lesson.
 
 ### Empty Project
 
 After the project is created, you should have an empty project window opened that will looks something like this:
 
 ![EmptyProject](images/EmptyProject.png)
+
+_If you look really close, you may notice I actually created my version of this project in the same lesson folder as
+this! You can ignore this slight difference._
 
 ### Project Window Breakdown
 
@@ -74,7 +75,8 @@ Let's break down some of the basics of an Intellij IDEA project window.
         1. The `.idea` folder: This folder contains [metadata](../terminology.md) about your project specific to
            Intellij so that it knows this is a Java project, and some additional information about the structure. You
            can ignore this folder, it is only for Intellij to use.
-        2. The `src` folder: This is where you put your actual code. Only code inside this folder will be compiled.
+        2. The `src` folder: This is where you put your actual code. Only code inside this folder will be
+           [compiled](../terminology.md).
         3. The `HelloWorld.iml` file: This is more metadata for Intellij, you can ignore it.
 2. Left tab-bar
     * This is at the very left of the screen, the text is sideways, and you should at least see a tab labeled
@@ -111,12 +113,13 @@ Name the package, in my case "aetherial"
 Now you should see a new folder inside `src`! Notice that the folder icon is slightly different from the other ones. It
 looks and behaves like a regular folder, but it is a _special_ Java folder. Remember how I previously said that only
 code inside the `src` folder will be compiled? So will any code files inside _packages_ and _sub-packages_
-under the `src` folder!
+under the `src` folder! Remember, _package_ is just Java's fancy word for folder (mostly, we'll talk more about this
+later).
 
 If you were to create a folder under `src` not using Intellij (File Explorer, terminal, or Finder), Intellij will
 automatically know that the new folder should be treated as a package.
 
-**_I thought you said packages were different from folders!_**
+> _I thought you said packages were different from folders!_
 
 This starts getting complicated, _really_ complicated, to explain. The short version is: packages are the folder
 structure for compiled code. They allow you to define _namespaces_ where your Java code exists, this helps prevent the
@@ -138,7 +141,7 @@ You should now have a file named "HelloWorld" created and open in the center win
 
 ### What is a Class?
 
-**_Whoa! Slow down! What is a Class file? And what are those other options about?_**
+> _Whoa! Slow down! What is a Class file? And what are those other options about?_
 
 This is also very in-depth topic that will be covered later. For now, just understand that "Class files" are your Java
 code files that will be compiled and ran.
@@ -162,13 +165,15 @@ public class HelloWorld {
 3. The remaining curly-bracket `}`
     * This is also part of the Java syntax. Every opening curly-bracket `{` needs a buddy closing curly bracket `}`
       that comes after the opening one!
+    * I will interchangeably use curly-bracket and curly-brace to describe either of `{` and `}` (sometimes I even leave
+      out the dash between the words, scandalous I know).
 
 ### Syntax? I hate taxes!
 
 I promise you are more familiar with "syntax" than you might think. This guide is written in English, and I have been
-using English _syntax_ this entire time! Syntax can be though of a broader term for "grammar". Think about the following
-sentence: "Dog fence the jumped lazy the over." It makes no sense! Complete gibberish! The order of words matters a lot
-in any language.
+using English _syntax_ this entire time! Syntax can be thought of as broader term for "grammar". Think about the
+following sentence: "Dog fence the jumped lazy the over." It makes no sense! Complete gibberish! The order of words
+matters a lot in any language.
 
 Now as humans, we can figure out I _meant_ to say "The lazy dog jumped over the fence." That is great and all for us,
 but computers are not good at understanding what we _meant_ to say. Computers are very literal when it comes to the
@@ -192,17 +197,17 @@ public class HelloWorld {
 }
 ```
 
-**_WHAT DO ALL THESE WORDS MEAN?!?!?!_**
+> **_WHAT DO ALL THESE WORDS MEAN?!?!?!_**
 
 Calm down, I will answer your questions by yet again waving my hands through the air and telling you that it will be
 explained later!
 
-**_YOU KEEP SAYING LATER, WILL THAT EVER ACTUALLY HAPPEN!?!?!_**
+> **_YOU KEEP SAYING LATER, WILL THAT EVER ACTUALLY HAPPEN!?!?!_**
 
 Yes, I promise! Assuming you continue this guide and learning about Java that is.
 
-For now, we are going to pretend that only code written between those inner curly-braces after "public static void main(
-String[] args)" `{` and before its closing buddy `}` will be run.
+For now, we are going to pretend that only code written between those inner curly-braces after
+`public static void main(String[] args) {` and before its closing buddy `}`, will be executed.
 
 ### Play Button
 
@@ -235,6 +240,8 @@ Process finished with exit code 0
 You have successfully built, compiled, and executed your first program! Remember from
 [Lesson 0](../lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE will
 take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
+
+### The `out` Folder
 
 You may have noticed a new folder called `out` that appeared in your project window. This is where the compiled code
 lives. If you open the folder in Intellij and find your HelloWorld Class file, you will likely see it looks almost
@@ -275,7 +282,7 @@ public class HelloWorld {
 
 #### Usage
 
-`System.out.println()` is the first piece of Java code almost everyone learns, and everyone continues to use it until
+`System.out.println();` is the first piece of Java code almost everyone learns, and everyone continues to use it until
 they stop programming. This is not a "one and done" lesson. You will print things to the console in _every single_
 lesson, and even in programming careers.
 
@@ -286,9 +293,11 @@ the parenthesis and quotation marks of `System.out.println("");` will appear in 
 small, but very important piece to remember, is that almost every line of code inside those inner curly braces needs to
 end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
 
+## The Top Play Button
+
 You may have noticed that the little play button at the top is no longer grayed out! By pushing the play button on the
-side which you did earlier, you have now told Intellij _where_ the entry point to your program is. Now you can click the
-same play button as earlier, or the play button at the top!
+side, which you did earlier, you have now told Intellij _where_ the entry point to your program is. Now you can click
+the same play button as earlier, or the play button at the top!
 
 ```text
 "C:\Program Files\Eclipse Adoptium\jdk-17.0.1.12-hotspot\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\lib\idea_rt.jar=56332:C:\Program Files\JetBrains\IntelliJ IDEA 2021.2.3\bin" -Dfile.encoding=UTF-8 -classpath D:\Gits\JavaLearning\lesson-001\completed\HelloWorld\out\production\HelloWorld aetherial.HelloWorld
@@ -321,8 +330,8 @@ Congratulations on writing your very first Java program! What do you mean you ba
 on? That is perfectly 100% A-Okay and expected (and completely normal)!
 
 Programming is not something you can pick up in a few hours. Just like any other skill or trade, you must practice, and
-the practice some more, and then practice even more after that, and then... getting the picture yet? You will not become
-an expert programmer that understands everything over a single night. Yes some people have a "natural talent" for
+then practice some more, and then practice even more after that, and then... getting the picture yet? You will not
+become an expert programmer that understands everything over a single night. Yes some people have a "natural talent" for
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
 
