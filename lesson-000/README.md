@@ -45,7 +45,7 @@ Java onto your computer. So let us install Java to get started.
 
 ### Java has been installed!
 
-**_Java is installed, now I can program right?!_**
+> Java is installed, now I can program right?!
 
 If you like suffering, sure. If you have even a shred of dignity, you will also want to install
 an [Integrated Development Environment](../terminology.md) (IDE). Think of this as software that helps you write
@@ -75,7 +75,7 @@ NetBeans, Eclipse, etc. The one this guide uses, and one of the most popular by 
 
 ### Intellij IDEA has been installed!
 
-**_Now can I finally write a program?_**
+> Now can I finally write a program?
 
 Yes! But not in this lesson.
 
