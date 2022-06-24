@@ -1,8 +1,18 @@
+<style>
+    table {
+        width: 100%;
+    }
+</style>
+
 # Lesson 1 - Hello World
 
-[Previous Lesson - Lesson 0](../lesson-000)
+| Previous Lesson           |                Next Lesson |
+|:--------------------------|---------------------------:|
+| [Lesson 0](../lesson-000) |  [Lesson 2](../lesson-002) |
 
-[Next Lesson - Lesson 2](../lesson-002)
+
+
+
 
 ## Projects Folder
 
