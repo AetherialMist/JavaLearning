@@ -14,3 +14,4 @@ This project has two primary goals:
 * [Lesson 2](lesson-002) - Intro to Types
 * [Lesson 3](lesson-003) - Intro to Types Part 2
 * [Lesson 4](lesson-004) - Variables
+* [Lesson 5](lesson-005) - Variable Naming and Keywords
