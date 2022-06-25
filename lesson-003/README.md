@@ -145,7 +145,7 @@ that did not happen! Instead, we got:
 
 `6 / 4 * 3` --> `1 * 3` --> `3`
 
-Finally, some parenthesis! `5 * (2 + 3)` notice how we MUST but the `*` between the `5` and `(`. In regular math, we can
+Finally, some parenthesis! `5 * (2 + 3)` notice how we MUST put the `*` between the `5` and `(`. In regular math, we can
 use a shorthand like `5(2 + 3)`, but Java does not understand this!
 
 Output
@@ -210,7 +210,7 @@ Output
 
 You may not even get the exact same results shown here!
 
-**_WHAT IS HAPPENING? THAT IS NOT MATH!_**
+> _WHAT IS HAPPENING? THAT IS NOT MATH!_
 
 It's okay, take deep breaths! Let's talk about this.
 
@@ -260,7 +260,7 @@ What happens if we mix types? `int`s and `double`s? Let's find out!
 * `"Hello" + 12 * 3.5`
 * `"Hello" + 12 + 3.5`
 
-**_Hey! You tried sliding some `String`s in there!_**
+> _Hey! You tried sliding some `String`s in there!_
 
 Sure did! Let's see what happens!
 
@@ -286,9 +286,11 @@ Now what happened in those lines with `String`s?
 * `"Hello" + ", world!"` The `String`s were combined into one big `String`
 * `"Hello" + 12` The `12` was just added to the end of the `String`
 * `"Hello" + 12 * 3.5` The two numbers were multiplied, then added to the end of the `String`
+    * Remember, Java does multiplication before addition!
 * `"Hello" + 12 + 3.5` Each number was added to the end of the `String` on at a time to make one big `String`
+    * Addition is done left to right.
 
-**_What is happening!?!?_**
+> _What is happening!?!?_
 
 ### Current Program
 
@@ -337,21 +339,28 @@ converts the `int` into a `double` (_promotion_), and **then** does the math. Th
 operators.
 
 In the case of `String`s, this whole time we have been printing number types, and if you recall from the previous
-lesson, Java will convert the numbers to `String`s in order to print them. This combined with Java's ability to combine,
+lesson, Java will convert the numbers to `String`s in order to print them. This included with Java's ability to combine,
 or _add_, `String`s together using the `+` operator, ends with similar logic as above. This process of combining
 multiple `String`s into one big `String` is called "String Concatenation".
 
 Java knows how to _promote_ `double`s and `int`s to `String`s, and combine `String`s together, so that is what Java
 does!
 
-Java will automatically _promote_ types when required, but Java can **_NOT_** _demote_ types on its own. Remember 
-that Java does follow its own version for "order of operations". You can use Google to see the full list for 
-operation precedence, but there are a _lot_ of operations we have not discussed yet (3 out of 15 if you count 
-parenthesis).
+Java will automatically _promote_ types when required, but Java can **_NOT_** _demote_ types on its own. Remember that
+Java does follow its own version for "order of operations". You can use Google to see the full list for operation
+precedence, but there are a _lot_ of operations we have not discussed yet (3 out of 15 if you count parenthesis).
 
-**_"on its own," that means there is a way?_**
+> _"on its own," that means there is a way?_
 
 Yes, but we will cover that in a later lesson!
+
+As for _demotion_, Java will only automatically convert one type to another as long as "no information is lost in
+conversion". What in the world does that mean? When converting `3` into `3.0`, the _value_ represented by the types is
+still the same. If you try to convert `3.1` to just `3`, you have now lost information about the `.1`. Even `3.0`
+can **not** be converted back to just `3`, as the `.0` is considered important information for the value being
+represented. As for `String`s, once something is converted into a `String`, Java does not know anything about the 
+previous _type_ being represented. So _demotion_ from a String is just not possible without telling Java _how_ to 
+convert back to another type (a later topic).
 
 ## Recap
 

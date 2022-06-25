@@ -33,7 +33,7 @@ Java has 8 primitive types:
 * `long` Whole numbers ranging from `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` (inclusive)
 * `float` Decimal numbers with whole numbers equal to an `int` and up to 7 decimal places. (has additional special
   properties discussed later)
-  * Decimal numbers MUST start with a whole number, including `0`. So `0.5` is okay, `.5` is NOT okay.
+    * Decimal numbers MUST start with a whole number, including `0`. So `0.5` is okay, `.5` is NOT okay.
 * `double` Decimal numbers with whole numbers equal to a `long` and up to 16 decimal places.
     * Decimal numbers MUST start with a whole number, including `0`. So `0.5` is okay, `.5` is NOT okay.
 * `boolean` Either `true` or `false`, you can think of it as "yes" or "no", but for computers.
@@ -63,7 +63,7 @@ basic assumptions Java will use:
 * Any single character between single quotes is a `char`
     * If you try putting more than a single character between single quotes, you will get a "syntax error"
 
-And in most cases, this is completely correct!
+And in most cases, these assumptions are completely correct!
 
 ## [Syntax](../terminology.md) Errors
 
@@ -151,13 +151,12 @@ You can try this yourself, or just take my word (I promise I'm good for it!).
 Intellij will handle a lot of _format_ automatically while you type. A generally good "coding practice" (you will hear
 this phrase a _lot_), is to "reformat" your code regularly.
 
-1. Make sure you do not have anything highlighted with your mouse cursor. Just have the blinking little text cursor 
-   at the
-   end of a line anywhere in the file.
+1. Make sure you do not have anything highlighted with your mouse cursor. Just have the blinking little text cursor at
+   the end of a line anywhere in the file.
 2. At the very top from the Menu Bar, navigate to `Code -> Reformat Code` and select it (`left-click`).
 3. Intellij will do all the hard word to format your code back to a human-readable format!
-    * Assuming you do not have any [_syntax_](../terminology.md) errors! Errors in this context, simply meaning invalid
-      syntax.
+    * Assuming you do not have any [_syntax_](../terminology.md) errors! Errors in this context, could mean a missing "
+      ;", or a curly brace is missing its buddy, or some other issue which Intellij will give you a red squiggly for.
 
 ### Everything Prints as a String
 
@@ -188,7 +187,6 @@ next topic, rinse and repeat; programming will always reuse previously learned i
 that new information will get reused, and so on. So why did I basically just say the same thing twice? Because it is
 that important!
 
-Time to head to [Lesson 3](../lesson-003)! (Feel free to take breaks, get up and stretch, refill your
-water, etc.!)
+Time to head to [Lesson 3](../lesson-003)! (Feel free to take breaks, get up and stretch, refill your water, etc.!)
 
 [Completed Code](completed)
