@@ -139,6 +139,10 @@ You should now have a file named "HelloWorld" created and open in the center win
 
 ![ClassCreated](images/ClassCreated.png)
 
+Don't worry if your filename appears Blue, Red, Black, or White. This has to do with that "Git" section on the 
+Action Bar, and we will have a very long discussion about that later. But for now, just ignore the color for the 
+file name!
+
 ### What is a Class?
 
 > _Whoa! Slow down! What is a Class file? And what are those other options about?_
