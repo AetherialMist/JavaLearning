@@ -7,7 +7,7 @@
 ## The Box Analogy
 
 Up to this point, we've just been printing types, which is not very interesting. This is going to change with the
-introduction to _variables_.
+introduction of _variables_.
 
 You've probably dealt with variables in math class. But have no fear! We will not be solving equations to learn what
 `x` is, we will already know what `x` is, the process for now will just look similar to math.
@@ -29,7 +29,7 @@ types!).
 
 ## Assignment
 
-Introducing another special operator character, `=` the equals sign!
+Introducing another special operator character: `=` the equals sign!
 
 There are two ways for creating one of these boxes in Java (we will show real examples shortly):
 
@@ -127,6 +127,15 @@ Output
 ```text
 12
 ```
+
+This is a fairly straight-forward example:
+
+1. We made two variables `x` and `y`, each of type `int`, and we set some value to them.
+2. We added the two `int` variables together.
+   * We told Java _earlier_ in the program what both `x` and `y` actually are.
+   * `x` _represents_ 5
+   * `y` _represents_ 7
+3. We printed the result to the console.
 
 ### Persistent
 
