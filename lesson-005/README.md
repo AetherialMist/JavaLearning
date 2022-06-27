@@ -132,6 +132,87 @@ There is a huge list of reserved words in Java, you can look at most of them her
 https://www.w3schools.com/java/java_ref_keywords.asp
 . We'll eventually cover most of these.
 
+## Comments
+
+Sometimes while programming, you want to leave little notes. So how do you leave a note that isn't code? The answer 
+is "comments"!
+
+There are two main ways to create comments: single line comments and multi-line comments.
+
+To make a single line comment, just use two forward slashes `//` followed by your note!
+
+```java
+package aetherial;
+
+public class VariableNaming {
+
+    public static void main(String[] args) {
+        // This is a single line comment! Java will not try to run this line!
+        int length = 12;
+        int width = 4; // You can also put single line comments at the end of a line!
+        int perimeter = length * 2 + width * 2;
+        System.out.println("Perimeter of rectangle: " + perimeter);
+    }
+
+}
+```
+
+To make a multi-line comment, use a forward slash followed by an asterisk `/*` to signify that start, and an 
+asterisk followed by a forward slash`*/` to signify the end!
+
+```java
+package aetherial;
+
+public class VariableNaming {
+
+    public static void main(String[] args) {
+        int length = 12;
+        int width = 4;
+        int perimeter = length * 2 + width * 2;
+        
+        /*
+        This is a
+        multi-line comment
+        where all these lines are
+        ignored by Java!
+        */
+        System.out.println("Perimeter of rectangle: " + perimeter);
+    }
+
+}
+```
+
+You can also comment out actual code! This is very useful while testing functionality, so you don't have to remember 
+what you previously did!
+
+```java
+package aetherial;
+
+public class VariableNaming {
+
+    public static void main(String[] args) {
+        int length = 12;
+        //int length = 12375;
+        int width = 4;
+        int perimeter = length * 2 + width * 2;
+        
+        System.out.println("Perimeter of rectangle: " + perimeter);
+    }
+
+}
+```
+
+Since we commented out `int length = 12375`, that line will not be executed by Java!
+
+Adding comments to code is a huge debate among the computer science industry. My personal stance on the matter is: 
+If you are doing something _weird_, or you feel like some code deserves a comment or two or seven, just add the 
+comment. Having graded programming assignments, and especially working professionally, **please** just add comments. 
+I can not tell you how many times I have attempted to use someone else's code, only to find a huge confusion mess 
+that takes me hours to unravel and figure out, and where if the original author had just included a few comments 
+explaining what was happening, would have saved me all those hours.
+
+Going forward in this guide, I will be adding little comments to my programs to help explain things!
+
 ## Recap
 
 In this lesson, you learned about:
@@ -139,6 +220,7 @@ In this lesson, you learned about:
 * Meaningful variable naming
 * Naming conventions
 * Reserved words and Keywords
+* Adding comments to your code
 
 ## Next Steps
 
