@@ -339,4 +339,4 @@ I hope you took time in understanding this lesson. You can always come back to r
 previous lessons, we will be using this lesson in all lessons going forward! Computer science and programming builds on
 itself. Practice, practice, and more practice is how you will get better, just like with anything in life!
 
-You've made it this far already, and you're doing a great job! When you are ready, move on to [Lesson 7](../lesson-007).
+You've made it this far already, and you're doing a great job! When you are ready, move on to [Lesson 7](../lesson-008).

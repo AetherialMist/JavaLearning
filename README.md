@@ -16,4 +16,5 @@ This project has two primary goals:
 * [Lesson 4](lesson-004) - Variables
 * [Lesson 5](lesson-005) - Variable Naming and Keywords
 * [Lesson 6](lesson-006) - Intro to Boolean Algebra
-* [Lesson 7](lesson-007) - If Statements
+* [Lesson 7](lesson-007) - Intro to Methods, Classes, and Objects
+* [Lesson 8](lesson-008) - User Input and Intro to Methods
