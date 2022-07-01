@@ -19,6 +19,58 @@ opinion.
 
 And I will usually put my response to _your_ question or statement right below.
 
+## Traversing This Guide
+
+As you probably already know, this guide is on GitHub. We will have a future lesson about how to use Git and GitHub
+(they are not the same thing!) for your own projects.
+
+GitHub provides a nice way to view projects. When looking at a folder, if the folder contains a `README.md` file, 
+then GitHub will show the contents of that file in a nicely formatted view (what you are reading right now!). You 
+can also open the `README.md` file directly, but there is not much reason to do that.
+
+Near the top of this webpage, you should see something very similar to:
+
+![GitHub](images/GitHubTraversal.png)
+
+### Breadcrumbs
+
+While looking at the various folders and files in this project, GitHub provides **_breadcrumbs_** near the top. On 
+this page, they are:
+
+`JavaLearning / chapter-000 / lesson-000 /`
+
+The breadcrumbs contain an ordered list of items separated by a single forward slash `/`. Each item, except for the 
+last one (the far right) is a folder. The last item can be either a folder or an individual file.
+The last item is also what you are currently looking at; in this case: `lesson-000`.
+
+You can click the hyperlinks in the breadcrumbs to "go back" to the folders containing the current folders and files.
+So `left-clicking` on `chapter-000` will take you back to the "Chapter 0 - Setup" page you likely saw before this page.
+And the `JavaLearning` link will take you all the way back to the very start.
+
+### Last commit
+
+This is the next line under the breadcrumbs. It shows who the last person to edit this folder or file was, and a 
+little message to go with their change. For the most part, you can just ignore this line.
+
+### Sub-Folders and Files
+
+Right below the last commit line, are the sub-folder, files, and "go back" link. In the picture above, there are 
+only three things:
+
+1. The "go back" sub-folder. This will take you to the previous breadcrumb we explained earlier; in this case 
+   `chapter-000`.
+2. `images` sub-folder. This is where I put images in each lesson, I could put other things in there though. The 
+   names of folders and files are mostly meaningless (there are a few exceptions).
+3. `README.md` what you are reading right now. As mentioned earlier, if a folder contains this specially named file, 
+   then GitHub shows it while viewing the folder it is in. This filename is one of the exceptions previously mentioned.
+
+Later lessons may have more sub-folders and files in them. You can click on them in this top section to open those 
+folders and files. Just remember you have those breadcrumbs at the top to get back!
+
+### README.md
+
+I think I have explained this enough already, it is what you are currently reading and is a file within this folder.
+
 ## Getting Started
 
 Sure you could write raw Java files using Microsoft Notepad, but you will not be able to run the code unless you install
