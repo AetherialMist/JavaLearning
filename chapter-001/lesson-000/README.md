@@ -43,7 +43,8 @@ dozens, if not hundreds, of sub-folders inside this projects-folder.
 6. For the `Build System`: select `Intellij`
     * We will eventually explain build systems in more detail later, at which point we will switch to using `Maven`.
 7. For `JDK`: select Java 17 from the dropdown
-    * May show as just "`17`"
+    * If you have a newer LTS version of Java, use that.
+    * May show as just "`17`".
     * You may need to select `Add JDK...` and browse to the Java 17 install location that you were told to write down
       earlier.
         * Probable Windows Location: `C:\Program Files\Eclipse Adoptium\jdk-VERSION-hotspot`
@@ -64,6 +65,8 @@ this! You can ignore this slight difference._
 
 Let's break down some of the basics of an Intellij IDEA project window.
 
+![LeftSideBar](images/LeftSideBar.png)
+
 1. Left sidebar
     * This is where you can view your project's structure; most of the time will just be folders and files.
     * You should see a Folder called "HelloWorld" near the top of this sidebar, with some sub-folders and files. Let's
@@ -74,15 +77,25 @@ Let's break down some of the basics of an Intellij IDEA project window.
         2. The `src` folder: This is where you put your actual code. Only code inside this folder will be
            [compiled](../../terminology.md).
         3. The `HelloWorld.iml` file: This is more metadata for Intellij, you can ignore it.
+
+![LeftTabBar](images/LeftTabBar.png)
+
 2. Left tab-bar
     * This is at the very left of the screen, the text is sideways, and you should at least see a tab labeled
       "Project". This left tab-bar is what controls what is shown at the left sidebar. If you click on "Project", you
       should see that nice window discussed above disappear. To make that window come back, just click "Project"
       again. Sometimes while clicking around Intellij, that Project window to the left disappears, so it's important to
       know how to get it back!
+    * I have a few other things on this tab-bar (and you might too), you can ignore those for now.
+
+![MenuBar](images/MenuBar.png)
+
 3. Menu bar
     * At the very top, you have the classic menu bar containing dropdowns like "File" and "Help". You can browse these
       on your own, but after a while you will rarely use these dropdowns in favor of keyboard shortcuts.
+
+![ActionBar](images/ActionBar.png)
+
 4. "Action bar" (I have no idea what it is actually called)
     * Right below the Menu bar! You should see a nice little hammer, "Add Configuration" (ignore this for now), some
       grayed out buttons, and a thing called "Git" (much more on this later).
