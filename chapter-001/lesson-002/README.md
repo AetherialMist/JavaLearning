@@ -1,9 +1,5 @@
 # Lesson 3 - Intro to Types Part 2
 
-[Previous Lesson - Lesson 2](../lesson-002)
-
-[Next Lesson - Lesson 4](../lesson-004)
-
 ## Math
 
 No, stop running away! I promise no complicated math! And we'll make Java do all the hard work!
@@ -23,7 +19,7 @@ JavaProjects
 ```
 
 We are going to add another project for this lesson, and let's call it "PrintingMath". The process is the same as
-before, so review the previous [lessons](../chapter-001/lesson-000/README.md) if you aren't sure. Remember to make that initial
+before, so review the previous [lessons](../lesson-000/README.md) if you aren't sure. Remember to make that initial
 package and `main` Class!
 
 ## Java Math Operators
@@ -58,7 +54,7 @@ introduced in a later lesson.
 
 ## Integer (whole number) Math
 
-Let's start by just adding two `int`s together. You can look back to the previous [lesson](../lesson-002/README.md)
+Let's start by just adding two `int`s together. You can look back to the previous [lesson](../lesson-001/README.md)
 for a refresher if needed. Remember that `int`s are whole numbers, and Java assumes you are using `int`s in most cases.
 I picked `12` and `5` to be added, but you can pick any two numbers you want, as long as the first is bigger than the
 second.
@@ -378,4 +374,8 @@ on your own. What happens if you _add_ a number first with a `String` second? In
 you don't do something that is not allowed in java (like using multiplication on a `String`), watch for those red
 squiggles!
 
-Once you have satiated your curiosity, move on to the next lesson, [Lesson 4](../lesson-004).
+Once you have satiated your curiosity, move on to the next lesson.
+
+[Completed Code](completed)
+
+[Previous](../lesson-001) | [Next](../lesson-003)

@@ -1,9 +1,5 @@
 # Lesson 4 - Variables
 
-[Previous Lesson - Lesson 3](../lesson-003)
-
-[Next Lesson - Lesson 5](../lesson-005)
-
 ## The Box Analogy
 
 Up to this point, we've just been printing types, which is not very interesting. This is going to change with the
@@ -257,4 +253,6 @@ In this lesson, you learned about:
 
 ## Next Steps
 
-[Lesson 5](../lesson-005)
+[Completed Code](completed)
+
+[Previous](../lesson-002) | [Next](../lesson-004)

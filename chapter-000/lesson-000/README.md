@@ -10,6 +10,8 @@ page if you forget what a word or phrase is about. There is also every programme
 There will also be a lot of new acronyms, multiple words shorted to just a few capital letters, in this guide. Acronyms
 have a special section in the [terminology](../../terminology.md) page.
 
+Throughout the guide I will also use "lesson" and "section" interchangeably. 
+
 ## Conversation
 
 I will occasionally have a conversation pretending to be you talking to me. I promise I'm not crazy, at least not in my

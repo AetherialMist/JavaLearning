@@ -1,9 +1,5 @@
 # Variable Naming and Keywords
 
-[Previous Lesson - Lesson 4](../lesson-004)
-
-[Next Lesson - Lesson 6](../lesson-006)
-
 ## Naming Variables
 
 There are 3 common problems that programmers face every single day:
@@ -226,4 +222,6 @@ In this lesson, you learned about:
 
 This was a small lesson, mostly just additional rules to keep in mind while programming in Java.
 
-Continue to [Lesson 6](../lesson-006)!
+[Completed Code](completed)
+
+[Previous](../lesson-003) | [Next](../lesson-005)

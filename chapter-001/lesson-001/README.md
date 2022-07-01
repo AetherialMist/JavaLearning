@@ -1,8 +1,4 @@
-# Lesson 2 - Intro to Types
-
-[Previous Lesson - Lesson 1](../chapter-001/lesson-000)
-
-[Next Lesson - Lesson 3](../lesson-003)
+# 1.1 - Intro to Types
 
 ## Types in the real world
 
@@ -13,7 +9,7 @@ decimal numbers, nouns, verbs, adjectives, and so many more! We just don't typic
 If a person tells you they drive a **Truck**, you likely have at least some knowledge about what they are talking about,
 and what trucks are used for -- typically pulling trailers or other heavy stuff. What you don't know is what brand of
 truck is it, how much horsepower it has, the color, and you don't really care. What you do care about, is that you can
-pull trailers with it! This actually ends up being a huge topic in computer science and will have multiple lessons
+pull trailers with it! This actually ends up being a huge topic in computer science and will have multiple sections
 dedicated to later on.
 
 Similarly, if I asked you what `2 + 4` is, you would _know_ that I asked you to add two numbers together. This
@@ -25,9 +21,11 @@ Number" is. And that is something Java also understands!
 Just as we have types in the real world, Java has its own definition of types. For now, we will only worry about Java
 "_primitive types_" plus one regular type.
 
+### Primitive Types
+
 Java has 8 primitive types:
 
-* `byte` Whole numbers ranging from `-128` to `127` ([inclusive](../terminology.md))
+* `byte` Whole numbers ranging from `-128` to `127` ([inclusive](../../terminology.md))
 * `short` Whole numbers ranging from `-32,768` to `32,767` (inclusive)
 * `int` Whole numbers ranging from `-2,147,483,648` to `2,147,483,647` (inclusive)
 * `long` Whole numbers ranging from `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` (inclusive)
@@ -42,10 +40,15 @@ Java has 8 primitive types:
       quotes, it became a `char`.
     * There will be more on `char`s in a later chapter! As they too have special properties.
 
-The "one regular type" we also care about right now is called the `String`. A `String` is an ordered collection of
+## Non-primitive Types
+
+The non-primitive type we care about _right now_ is called the `String`. A `String` is an ordered collection of
 `char`s (without their single quotes) all between double quotes. In the previous chapter, when you used
 `System.out.println("Hello world!")`, `"Hello world!"` was a `String`! I had already tricked you into using a Java type
 without telling you!
+
+There are thousands of non-primitive types in Java, and we can even create our own, but we will cover those topics 
+in a later section.
 
 ## Type Assumptions
 
@@ -65,7 +68,7 @@ basic assumptions Java will use:
 
 And in most cases, these assumptions are completely correct!
 
-## [Syntax](../terminology.md) Errors
+## [Syntax](../../terminology.md) Errors
 
 Intellij will underline any syntax error with a red squiggle, and trying to run your application will output an error
 that may include messages like "java: not a statement". Thankfully, Intellij will also usually include a hyperlink you
@@ -155,7 +158,7 @@ this phrase a _lot_), is to "reformat" your code regularly.
    the end of a line anywhere in the file.
 2. At the very top from the Menu Bar, navigate to `Code -> Reformat Code` and select it (`left-click`).
 3. Intellij will do all the hard word to format your code back to a human-readable format!
-    * Assuming you do not have any [_syntax_](../terminology.md) errors! Errors in this context, could mean a missing "
+    * Assuming you do not have any [_syntax_](../../terminology.md) errors! Errors in this context, could mean a missing "
       ;", or a curly brace is missing its buddy, or some other issue which Intellij will give you a red squiggly for.
 
 ### Everything Prints as a String
@@ -167,18 +170,18 @@ handles numbers and types is not human-readable at all.
 
 ## Recap
 
-In this lesson, you learned about:
+In this section, you learned about:
 
 * Java primitive types
-* The `String` type
+* The `String` type, which you used in the previous section!
 * Code format
 * Printing multiple types to the console
 * Java assumptions
 
 ## Next Steps
 
-This was a lot of information to take in at once. I encourage you to re-read through this lesson a few times, as we are
-going to be expanding on this knowledge in all future lessons. Programming builds on top of itself. What you learn on
+This was a lot of information to take in at once. I encourage you to re-read through this section a few times, as we are
+going to be expanding on this knowledge in all future sections. Programming builds on top of itself. What you learn on
 day 1, will be used every single day after that, and the same goes for day 2, day 3, day 4, ... day when you stop
 programming (hopefully you never give up!).
 
@@ -187,6 +190,8 @@ next topic, rinse and repeat; programming will always reuse previously learned i
 that new information will get reused, and so on. So why did I basically just say the same thing twice? Because it is
 that important!
 
-Time to head to [Lesson 3](../lesson-003)! (Feel free to take breaks, get up and stretch, refill your water, etc.!)
+Feel free to take breaks, get up and stretch, refill your water, etc.!
 
 [Completed Code](completed)
+
+[Previous](../lesson-000) | [Next](../lesson-002)

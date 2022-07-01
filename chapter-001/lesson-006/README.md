@@ -340,3 +340,9 @@ And if we run this program our output will look like:
 You created a Printer!
 Hello, world!
 ```
+
+## Next Steps
+
+[Completed Code](completed)
+
+[Previous](../lesson-005) | [Next](../lesson-007)

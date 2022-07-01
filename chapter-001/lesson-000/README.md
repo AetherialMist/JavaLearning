@@ -58,7 +58,7 @@ After the project is created, you should have an empty project window opened tha
 
 ![EmptyProject](images/EmptyProject.png)
 
-_If you look really close, you may notice I actually created my version of this project in the same lesson folder as
+_If you look really close, you may notice I actually created my version of this project in the same section folder as
 this! You can ignore this slight difference._
 
 ### Project Window Breakdown
@@ -138,7 +138,7 @@ automatically know that the new folder should be treated as a package.
 
 This starts getting complicated, _really_ complicated, to explain. The short version is: packages are the folder
 structure for compiled code. They allow you to define _namespaces_ where your Java code exists, this helps prevent the
-JVM from being confused with where exactly the code is located. We will discuss this more in-depth in a later lesson.
+JVM from being confused with where exactly the code is located. We will discuss this more in-depth in a later section.
 
 ![PackageCreated](images/PackageCreated.png)
 
@@ -326,10 +326,10 @@ Process finished with exit code 0
 
 Hello to you too little program!
 
-## Completed Lessons
+## Completed Folder
 
-Anytime there is code involved (almost all lessons), a completed project will be included which you can reference if you
-ever get stuck. There will be a hyperlink at the bottom of each lesson leading to the completed code.
+Anytime there is code involved (almost all sections), a completed project will be included which you can reference if you
+ever get stuck. There will be a hyperlink at the bottom of each section leading to the completed code.
 
 ## Recap
 
@@ -357,4 +357,4 @@ practice!
 
 [Challenges](challenges)
 
-[Previous](../../chapter-000/lesson-000) | [Next](../../lesson-002)
+[Previous](../../chapter-000/lesson-000) | [Next](../lesson-001)
