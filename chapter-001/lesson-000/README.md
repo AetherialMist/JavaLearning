@@ -78,6 +78,8 @@ Let's break down some of the basics of an Intellij IDEA project window.
            [compiled](../../terminology.md).
         3. The `HelloWorld.iml` file: This is more metadata for Intellij, you can ignore it.
 
+---
+
 ![LeftTabBar](images/LeftTabBar.png)
 
 2. Left tab-bar
@@ -88,11 +90,15 @@ Let's break down some of the basics of an Intellij IDEA project window.
       know how to get it back!
     * I have a few other things on this tab-bar (and you might too), you can ignore those for now.
 
+---
+
 ![MenuBar](images/MenuBar.png)
 
 3. Menu bar
     * At the very top, you have the classic menu bar containing dropdowns like "File" and "Help". You can browse these
       on your own, but after a while you will rarely use these dropdowns in favor of keyboard shortcuts.
+
+---
 
 ![ActionBar](images/ActionBar.png)
 
