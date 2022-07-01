@@ -1,4 +1,4 @@
-# Lesson 7 - Intro to Methods, Classes, and Objects
+# 1.6 - Intro to Methods, Classes, and Objects
 
 ## Scope - Part 1
 

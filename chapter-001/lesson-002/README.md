@@ -1,4 +1,4 @@
-# Lesson 3 - Intro to Types Part 2
+# 1.3 - Intro to Types Part 2
 
 ## Math
 

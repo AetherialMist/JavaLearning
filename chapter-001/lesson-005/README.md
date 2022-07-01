@@ -1,4 +1,4 @@
-# Lesson 6 - Boolean Logic
+# 1.5 - Boolean Logic
 
 ## Booleans in Real Life
 
