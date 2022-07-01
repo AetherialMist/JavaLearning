@@ -154,9 +154,8 @@ You should now have a file named "HelloWorld" created and open in the center win
 
 ![ClassCreated](images/ClassCreated.png)
 
-Don't worry if your filename appears Blue, Red, Black, or White. This has to do with that "Git" section on the 
-Action Bar, and we will have a very long discussion about that later. But for now, just ignore the color for the 
-file name!
+Don't worry if your filename appears Blue, Red, Black, or White. This has to do with that "Git" section on the Action
+Bar, and we will have a very long discussion about that later. But for now, just ignore the color for the file name!
 
 ### What is a Class?
 
@@ -179,8 +178,8 @@ public class HelloWorld {
     * This fancy Class file knows where it is inside the `package` hierarchy. Neat! This becomes very important later
       on.
 2. `public class HelloWorld {`
-    * This is part of the Java [syntax](../../terminology.md). The name of the file and the name of the Class (the word, or
-      words with no spaces between them, directly after `public class`) MUST match!
+    * This is part of the Java [syntax](../../terminology.md). The name of the file and the name of the Class (the word,
+      or words with no spaces between them, directly after `public class`) MUST match!
 3. The remaining curly-bracket `}`
     * This is also part of the Java syntax. Every opening curly-bracket `{` needs a buddy closing curly bracket `}`
       that comes after the opening one!
@@ -189,9 +188,9 @@ public class HelloWorld {
 
 ### Syntax? I hate taxes!
 
-I promise you are more familiar with "syntax" than you might think. This guide is written in English, and I have been
-using English _syntax_ this entire time! Syntax can be thought of as broader term for "grammar". Think about the
-following sentence: "Dog fence the jumped lazy the over." It makes no sense! Complete gibberish! The order of words
+I promise you are more familiar with **_syntax_** than you might think. This guide is written in English, and I have
+been using English _syntax_ this entire time! Syntax can be thought of as broader term for **_grammar_**. Think about
+the following sentence: "Dog fence the jumped lazy the over." It makes no sense! Complete gibberish! The order of words
 matters a lot in any language.
 
 Now as humans, we can figure out I _meant_ to say "The lazy dog jumped over the fence." That is great and all for us,
@@ -228,7 +227,7 @@ Yes, I promise! Assuming you continue this guide and learning about Java that is
 For now, we are going to pretend that only code written between those inner curly-braces after
 `public static void main(String[] args) {` and before its closing buddy `}`, will be executed.
 
-### Play Button
+### Play Buttons
 
 You may have noticed a little play button has appeared next to both `public class HelloWorld` and
 `public static void main`.
@@ -257,8 +256,8 @@ Process finished with exit code 0
 ```
 
 You have successfully built, compiled, and executed your first program! Remember from
-[Lesson 0](../../chapter-000/lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE will
-take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
+[Lesson 0.0](../../chapter-000/lesson-000/README.md) how I told you not to worry about manually compiling your code
+because the IDE will take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
 
 ### The `out` Folder
 
@@ -355,5 +354,7 @@ programming and will learn it faster, but do NOT be discouraged. It takes time, 
 practice!
 
 [Completed Code](completed)
+
+[Challenges](challenges)
 
 [Previous](../../chapter-000/lesson-000) | [Next](../../lesson-002)
