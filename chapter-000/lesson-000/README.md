@@ -34,6 +34,8 @@ Near the top of this webpage, you should see something very similar to:
 
 ### Breadcrumbs
 
+_Don't click on the image above. The breadcrumbs in the image will not work._
+
 While looking at the various folders and files in this project, GitHub provides **_breadcrumbs_** near the top. On 
 this page, they are:
 
