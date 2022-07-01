@@ -335,6 +335,6 @@ become an expert programmer that understands everything over a single night. Yes
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
 
-Onto [Lesson 2](../../lesson-002)!
-
 [Completed Code](completed)
+
+[Previous](../../chapter-000/lesson-000) | [Next](../../lesson-002)

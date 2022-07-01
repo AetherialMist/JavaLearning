@@ -1,7 +1,5 @@
 # 0.0 - Integrated Development Environment (IDE)
 
-[Next Lesson - Lesson 1](../../chapter-001/lesson-000/README.md)
-
 ## Terminology
 
 You will encounter a lot of new words and phrases throughout this guide. Usually the first time unfamiliar terminology
@@ -111,4 +109,6 @@ In this lesson, you:
 
 ## Next Steps
 
-You are done here, go on to [Lesson 1](../../chapter-001/lesson-000)!
+This was mostly boring, but is required to continue.
+
+[Next](../../chapter-001/lesson-000)
