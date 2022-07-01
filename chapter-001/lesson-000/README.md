@@ -1,8 +1,4 @@
-# Lesson 1 - Hello World
-
-|      Previous Lesson      |        Next Lesson         |
-|:-------------------------:|:--------------------------:|
-| [Lesson 0](../lesson-000) | [Lesson 2](../lesson-002)  |
+# 1.0 - Hello World
 
 ## Projects Folder
 
@@ -72,11 +68,11 @@ Let's break down some of the basics of an Intellij IDEA project window.
     * This is where you can view your project's structure; most of the time will just be folders and files.
     * You should see a Folder called "HelloWorld" near the top of this sidebar, with some sub-folders and files. Let's
       break this down even further:
-        1. The `.idea` folder: This folder contains [metadata](../terminology.md) about your project specific to
+        1. The `.idea` folder: This folder contains [metadata](../../terminology.md) about your project specific to
            Intellij so that it knows this is a Java project, and some additional information about the structure. You
            can ignore this folder, it is only for Intellij to use.
         2. The `src` folder: This is where you put your actual code. Only code inside this folder will be
-           [compiled](../terminology.md).
+           [compiled](../../terminology.md).
         3. The `HelloWorld.iml` file: This is more metadata for Intellij, you can ignore it.
 2. Left tab-bar
     * This is at the very left of the screen, the text is sideways, and you should at least see a tab labeled
@@ -164,7 +160,7 @@ public class HelloWorld {
     * This fancy Class file knows where it is inside the `package` hierarchy. Neat! This becomes very important later
       on.
 2. `public class HelloWorld {`
-    * This is part of the Java [syntax](../terminology.md). The name of the file and the name of the Class (the word, or
+    * This is part of the Java [syntax](../../terminology.md). The name of the file and the name of the Class (the word, or
       words with no spaces between them, directly after `public class`) MUST match!
 3. The remaining curly-bracket `}`
     * This is also part of the Java syntax. Every opening curly-bracket `{` needs a buddy closing curly bracket `}`
@@ -242,7 +238,7 @@ Process finished with exit code 0
 ```
 
 You have successfully built, compiled, and executed your first program! Remember from
-[Lesson 0](../lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE will
+[Lesson 0](../../chapter-000/lesson-000/README.md) how I told you not to worry about manually compiling your code because the IDE will
 take care of all that for you? See, we did get to "later" on one topic, more "later"s to come!
 
 ### The `out` Folder
@@ -256,7 +252,7 @@ nonsense.
 ![CompiledCode](images/CompiledCode.png)
 
 This is your OS's attempt at displaying the compiled Java byte-code file using regular english letters. Compiled code is
-meant for the JVM to understand, NOT you! That is why we have special programs called [compilers](../terminology.md)
+meant for the JVM to understand, NOT you! That is why we have special programs called [compilers](../../terminology.md)
 that convert human-readable files, into computer-readable files. There are also de-compilers that do their best to
 reverse the process, but they are not always perfect.
 
@@ -339,6 +335,6 @@ become an expert programmer that understands everything over a single night. Yes
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
 
-Onto [Lesson 2](../lesson-002)!
+Onto [Lesson 2](../../lesson-002)!
 
 [Completed Code](completed)

@@ -23,7 +23,7 @@ JavaProjects
 ```
 
 We are going to add another project for this lesson, and let's call it "PrintingMath". The process is the same as
-before, so review the previous [lessons](../lesson-001/README.md) if you aren't sure. Remember to make that initial
+before, so review the previous [lessons](../chapter-001/lesson-000/README.md) if you aren't sure. Remember to make that initial
 package and `main` Class!
 
 ## Java Math Operators

@@ -7,10 +7,15 @@ This project has two primary goals:
 1. Start from the beginning, and explain as much as possible.
 2. Keep each lesson under 30 minutes.
 
+## Chapters
+
+* [Chapter 0 - Setup](chapter-000)
+* [Chapter 1 - Java Fundamentals](chapter-001)
+
 ## Lessons
 
 * [Lesson 0](lesson-000) - Getting ready to code!
-* [Lesson 1](lesson-001) - Hello World! First Java program
+* [Lesson 1](chapter-001/lesson-000) - Hello World! First Java program
 * [Lesson 2](lesson-002) - Intro to Types
 * [Lesson 3](lesson-003) - Intro to Types Part 2
 * [Lesson 4](lesson-004) - Variables

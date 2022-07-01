@@ -1,6 +1,6 @@
 # Lesson 2 - Intro to Types
 
-[Previous Lesson - Lesson 1](../lesson-001)
+[Previous Lesson - Lesson 1](../chapter-001/lesson-000)
 
 [Next Lesson - Lesson 3](../lesson-003)
 
