@@ -7,7 +7,7 @@ decimal numbers, nouns, verbs, adjectives, and so many more! We just don't typic
 "things" as _types_, but they are!
 
 If a person tells you they drive a **Truck**, you likely have at least some knowledge about what they are talking about,
-and what trucks are used for -- typically pulling trailers or other heavy stuff. What you don't know is what brand of
+and what trucks are used for -- typically pulling trailers or other heavy stuff. What you don't know is: what brand of
 truck is it, how much horsepower it has, the color, and you don't really care. What you do care about, is that you can
 pull trailers with it! This actually ends up being a huge topic in computer science and will have multiple sections
 dedicated to later on.
@@ -40,6 +40,12 @@ Java has 8 primitive types:
       quotes, it became a `char`.
     * There will be more on `char`s in a later chapter! As they too have special properties.
 
+> _What does primitive mean in this context?_
+
+Excellent question! Primitive in this context simply means they are the most basic types in the language. They don't do
+anything on their own, and they have no **_methods_** (a future topic). These types have a single purpose: to represent
+a simple value of their respective type.
+
 ## Non-primitive Types
 
 The non-primitive type we care about _right now_ is called the `String`. A `String` is an ordered collection of
@@ -47,12 +53,14 @@ The non-primitive type we care about _right now_ is called the `String`. A `Stri
 `System.out.println("Hello world!")`, `"Hello world!"` was a `String`! I had already tricked you into using a Java type
 without telling you!
 
-There are thousands of non-primitive types in Java, and we can even create our own, but we will cover those topics 
-in a later section.
+There are a lot of things you can do with a `String`, and we will experiment later.
+
+There are thousands of non-primitive types in Java, and we can even create our own, but we will cover those topics in a
+later section.
 
 ## Type Assumptions
 
-You may have noticed that there is a **lot** of overlap between the number types. So how does Java tell the different
+You may have noticed that there is a **lot** of overlap between the number types. So how does Java tell the difference
 between them? Well that is one very complicated question to answer fully, the short answer though, is that Java will
 make _assumptions_ about the exact type of number being used.
 
@@ -118,7 +126,7 @@ public class PrintingTypes {
 }
 ```
 
-Notice how we put each `System.out.println();` on its own line in the file. This makes it easier to read!
+Notice how we put each `System.out.println();` on its own line in the file. This makes the program easier to read!
 
 Your console output should look similar to the following (using whatever values for the types you specified):
 
@@ -140,8 +148,8 @@ used within the code files already. This indentation makes our code easier to re
 
 Technically speaking, the following is still proper Java syntax and will run, but is a pain for us to read:
 
-_Ignore this @formatter nonsense, you can enable a setting to disable formatting for sections of code and files which is
-sometimes useful. (I'm writing this whole guide using Intellij IDEA !)_
+_Ignore this @formatter nonsense, there is a setting to disable formatting for sections of code and files which is
+sometimes useful. (I'm writing this whole guide using Intellij IDEA!)_
 
 @formatter:off 
 ```java
@@ -158,15 +166,15 @@ this phrase a _lot_), is to "reformat" your code regularly.
    the end of a line anywhere in the file.
 2. At the very top from the Menu Bar, navigate to `Code -> Reformat Code` and select it (`left-click`).
 3. Intellij will do all the hard word to format your code back to a human-readable format!
-    * Assuming you do not have any [_syntax_](../../terminology.md) errors! Errors in this context, could mean a missing "
-      ;", or a curly brace is missing its buddy, or some other issue which Intellij will give you a red squiggly for.
+    * Assuming you do not have any [_syntax_](../../terminology.md) errors! Errors in this context, could mean a missing
+      `;`, or a curly brace is missing its buddy, or some other issue which Intellij will give you a red squiggly for.
 
 ### Everything Prints as a String
 
 When you print types to the console, us humans like to be able to read it. So Java goes through a process to convert
 everything into a `String` before printing it out. The numbers and other types are still their respective types, they
 just _temporarily_ get treated as `String`s for printing. This is convenient for us, because the way Java actually
-handles numbers and types is not human-readable at all.
+handles numbers and types is not human-readable at all. We will utilize this Java feature in the next lesson!
 
 ## Recap
 

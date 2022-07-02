@@ -32,14 +32,16 @@ Java has a set of symbols that are used for math. They are as follows:
 * `/` Division (forward slash)
 * `%` Modulo (percent sign)
 
-Whoa! What in the world is "Modulo"??? The `%` operator is mostly used with Integer math (whole numbers). Integers do
-not have factions, so while division gives you how many times the second number fits in the first number, modulo gives
-you the remainder. So `7 / 4` we know would be `1.75`, but Integer math does not allow that! Instead, we will find that
-Java treats `7 / 4` as `1`, because `4` only fits into `7` one time. If we use the _modulo_ operator instead, so `7 % 4`
-we end up with `3`! We took out as many "fours" as we could from `7` and we were left with `3`. For this reason,
-_modulo_ is often called the _remainder_ operator.
+> _Whoa! What in the world is "Modulo"???_
 
-## Oder of Operations
+The `%` operator is mostly used with Integer math (whole numbers). Integers do not have factions, so while division
+gives you how many times the second number fits in the first number, modulo gives you the remainder. So `7 / 4` we know
+would be `1.75`, but Integer math does not allow that! Instead, we will find that Java treats `7 / 4` as `1`,
+because `4` only fits into `7` one time. If we use the _modulo_ operator instead, so `7 % 4` we end up with `3`! We took
+out as many "fours" as we could from `7` and we were left with `3`. For this reason, _modulo_ is often called the _
+remainder_ operator.
+
+## Order of Operations
 
 With these operators in mind, we can make Java do math! And Java follows _almost_ the same basic math rules as us! In
 school, you probably learned about "PEMDAS" or Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction
@@ -56,7 +58,7 @@ introduced in a later lesson.
 
 Let's start by just adding two `int`s together. You can look back to the previous [lesson](../lesson-001/README.md)
 for a refresher if needed. Remember that `int`s are whole numbers, and Java assumes you are using `int`s in most cases.
-I picked `12` and `5` to be added, but you can pick any two numbers you want, as long as the first is bigger than the
+I picked `14` and `5` to be added, but you can pick any two numbers you want, as long as the first is bigger than the
 second.
 
 ```java
@@ -77,7 +79,9 @@ Output (using example above)
 19
 ```
 
-Neat! That is pretty boring though. I know, I know, we have to start somewhere though.
+> _Neat! That is pretty boring though._
+
+I know, I know, we have to start somewhere though.
 
 ### Integer Division
 
@@ -113,18 +117,11 @@ big enough, and then return whatever is left. We will manually do this in a late
 We talked before that Java treats multiplication and division with the same _precedence_ level, meaning they will be
 solved left to right, regardless of the operation used.
 
-To showcase this, we are going to make a print statement with several operations. `6 * 4 / 3`
+To showcase this, we are going to make a print statement with several operations. Create more print statements for 
+the following equations:
 
-Output
-
-```text
-19
-2
-4
-8
-```
-
-Now another print statement, `6 / 4 * 3` go!
+* `6 * 4 / 3`
+* `6 / 4 * 3`
 
 Output
 
@@ -274,8 +271,8 @@ Hello42.0
 Hello123.5
 ```
 
-So it looks like anytime there is a `double` in the equation, the result is still a `double` (ignoring the lines
-with `String`s!).
+So it looks like anytime there is a `double` in an equation of just numbers, the result is still a `double` (ignoring 
+the lines with `String`s!).
 
 Now what happened in those lines with `String`s?
 
@@ -283,7 +280,7 @@ Now what happened in those lines with `String`s?
 * `"Hello" + 12` The `12` was just added to the end of the `String`
 * `"Hello" + 12 * 3.5` The two numbers were multiplied, then added to the end of the `String`
     * Remember, Java does multiplication before addition!
-* `"Hello" + 12 + 3.5` Each number was added to the end of the `String` on at a time to make one big `String`
+* `"Hello" + 12 + 3.5` Each number was added to the end of the `String` one at a time to make one big `String`
     * Addition is done left to right.
 
 > _What is happening!?!?_
@@ -354,8 +351,8 @@ As for _demotion_, Java will only automatically convert one type to another as l
 conversion". What in the world does that mean? When converting `3` into `3.0`, the _value_ represented by the types is
 still the same. If you try to convert `3.1` to just `3`, you have now lost information about the `.1`. Even `3.0`
 can **not** be converted back to just `3`, as the `.0` is considered important information for the value being
-represented. As for `String`s, once something is converted into a `String`, Java does not know anything about the 
-previous _type_ being represented. So _demotion_ from a String is just not possible without telling Java _how_ to 
+represented. As for `String`s, once something is converted into a `String`, Java does not know anything about the
+previous _type_ being represented. So _demotion_ from a String is just not possible without telling Java _how_ to
 convert back to another type (a later topic).
 
 ## Recap

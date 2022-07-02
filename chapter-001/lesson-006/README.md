@@ -1,9 +1,14 @@
 # 1.6 - Intro to Methods, Classes, and Objects
 
+There is about to be a lot of new vocab, so prepare yourself! This is a very heavy lesson, it is perfectly okay and 
+normal to re-read lessons. I would be very surprised if you understood everything in this lesson after reading it 
+just one time. There is also nothing but yourself stopping you from creating your own random projects to test things 
+out on your own!
+
 ## Scope - Part 1
 
 Remember that talk about how every open curly brace `{` needs a buddy closing curly brace `}`? These braces define
-**_scope_**. Code inside a pair of curly braces, can access code from outer pairs, but can not access code inside inner
+**_scope_**. Code inside a pair of curly braces can access code from outer pairs, but can not access code inside inner
 pairs. It's okay if you have to read that previous sentence a few times, and it is also okay if that doesn't make total
 sense yet. Let's show an example using variables!
 
@@ -117,7 +122,7 @@ will be returned!
 This one tends to cause a lot of trouble for people first learning Java. `static` means you can use this method from a
 "static context". And "static context" means that you can use the method by simply using the `class` name, followed
 by `.` and the method name. We will demonstrate this shortly. This label is optional, and we will explain the
-differences soon.
+differences soon. _We have actually been using a static variable in every lesson `System.out`, shhhh._
 
 > _"use this method", what do you mean?_
 
@@ -150,7 +155,7 @@ public Essay print(Paper blankPaper)
 ```
 
 Notice how I did not include `static`. This is because you need to have access to a `Printer` in order to print. You
-can't just print from thin air! This is another way to think about the `static` keyword; you can use these methods
+can't just print from thin air! This is another way to think about the `static` keyword; you can use those methods
 from "thin air".
 
 ## Classes
@@ -164,7 +169,8 @@ a `class` file). We are finally going to create more than one `class` file!
 
 ### Create a New Example
 
-1. Name this project "MyFirstType", and this time name the starting class "Runner".
+1. Name this project "MyFirstType", and this time name the starting class "Runner". _I call this_ Runner _because it 
+   has the main method which_ runs  _our program. I am so creative!_
 
 ```java
 package aetherial;
@@ -218,12 +224,12 @@ public class Printer {
 
 ### Constructors
 
-Up until now, we have only used Java primitive types, where we can just use _literal_ values, like: `4`, `'A'`, `12. 5`,
+Up until now, we have only used Java primitive types, where we can just use _literal_ values, like: `4`, `'A'`, `12.5`,
 and we even get to treat `String` like a primitive type using double quotes `"Hello"`. Non-primitive types require the
 use of a special method called a **_constructor_**. This method has no return type, and the name of the method is the
 same as the `class` name.
 
-Java will create a _default constructor_ for you if you do not create on yourself for `class` files. But for
+Java will create a _default constructor_ for you if you do not create one yourself for `class` files. But for
 demonstration we will create the default constructor manually, and add a print statement inside. Later we will create
 constructors that take in arguments.
 
@@ -249,8 +255,6 @@ Constructors are an exception to that rule! Because the method name has to be id
 
 ### The `new` Keyword
 
-There is about to be a lot of new vocab, so prepare yourself!
-
 Java primitives let us set variables using the literal values, like `int x = 5;`. For non-primitive types, we have 
 to use the `new` keyword and a constructor of the type.
 
@@ -274,7 +278,7 @@ can use almost anything we want.
 
 This process of calling a constructor is called **_instantiation_**, and the result is an **_instance_** of the type.
 Instances are unique, and we will demonstrate this soon. An _instance_ of a `class` is also known as an **_Object_**,
-and we will explain why in a latter lesson.
+and we will explain why in a latter lesson. You may want to take a look back at [Section 1.3](../lesson-003).
 
 Go ahead and run your program as it is! Your output should look like:
 

@@ -35,6 +35,24 @@ There are two ways for creating one of these boxes in Java (we will show real ex
 After we have _declared_ (created) our box, anytime we reference `VARIABLE_NAME` in our code, Java knows that we are
 talking about our box.
 
+### Declaration
+
+The `TYPE VARIABLE_NAME` part of creating a variable is called **_declaration_**. We are telling Java that a new
+variable needs to be created and stored in memory somewhere.
+
+### Initialization
+
+This is the `VARIABLE_NAME = VALUE` part. This may or may not be on the same line as declaration, and tells Java to
+store the value inside our variable (our box). This is also sometimes called "setting the variable"; we _set_ the 
+variable to be some value.
+
+### Instantiation
+
+This is the `VALUE` part. A value is created and stored in volatile memory somewhere inside the computer. Don't worry if
+you don't understand exactly what the previous sentence means. The important part here, is that our variables do not
+actually hold the value we set them to. Instead, our variables hold a _pointer_ to the actual value stored in memory. We
+will have a future lesson about this, as it is very significant to Java.
+
 ## Create Another Project
 
 Alright, you know the drill. Create a new project and name this one "Variables".
@@ -128,9 +146,9 @@ This is a fairly straight-forward example:
 
 1. We made two variables `x` and `y`, each of type `int`, and we set some value to them.
 2. We added the two `int` variables together.
-   * We told Java _earlier_ in the program what both `x` and `y` actually are.
-   * `x` _represents_ 5
-   * `y` _represents_ 7
+    * We told Java _earlier_ in the program what both `x` and `y` actually are.
+    * `x` _represents_ 5
+    * `y` _represents_ 7
 3. We printed the result to the console.
 
 ### Persistent
@@ -249,7 +267,9 @@ So feel free to experiment with some more variables!
 In this lesson, you learned about:
 
 * Declaring variables
+* Changing variables after they have been declared
 * Using existing variables to create/set new or existing variable
+* Printing variables
 
 ## Next Steps
 

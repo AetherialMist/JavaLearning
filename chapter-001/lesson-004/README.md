@@ -131,7 +131,7 @@ https://www.w3schools.com/java/java_ref_keywords.asp
 ## Comments
 
 Sometimes while programming, you want to leave little notes. So how do you leave a note that isn't code? The answer 
-is "comments"!
+is **_comments_**!
 
 There are two main ways to create comments: single line comments and multi-line comments.
 
@@ -153,7 +153,7 @@ public class VariableNaming {
 }
 ```
 
-To make a multi-line comment, use a forward slash followed by an asterisk `/*` to signify that start, and an 
+To make a multi-line comment, use a forward slash followed by an asterisk `/*` to signify the start, and an 
 asterisk followed by a forward slash`*/` to signify the end!
 
 ```java
@@ -203,7 +203,7 @@ Since we commented out `int length = 12375`, that line will not be executed by J
 Adding comments to code is a huge debate among the computer science industry. My personal stance on the matter is: 
 If you are doing something _weird_, or you feel like some code deserves a comment or two or seven, just add the 
 comment. Having graded programming assignments, and especially working professionally, **please** just add comments. 
-I can not tell you how many times I have attempted to use someone else's code, only to find a huge confusion mess 
+I can not tell you how many times I have attempted to use someone else's code, only to find a huge confusing mess 
 that takes me hours to unravel and figure out, and where if the original author had just included a few comments 
 explaining what was happening, would have saved me all those hours.
 

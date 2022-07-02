@@ -155,7 +155,7 @@ booleans (true/false questions) that are joined by `and`. This means you will bu
 both of those questions is `true`. When talking about conditions, the use of "and", "or", and "not" usually means you
 are talking about a _boolean expression_.
 
-* `AND`: `true` only if both the left and right side must evaluate to `true`. If either one or both sides are `false`,
+* `AND`: `true` only if both the left and right side evaluate to `true`. If either one or both sides are `false`,
   then the result is `false`.
 * `OR`: `true` if either one or both sides are `true`. If both sides evaluate to `false`, then the result is `false`
 * `NOT`: The opposite of the given boolean expression. `true` becomes `false`, and `false` becomes `true`.
@@ -164,20 +164,20 @@ In both math and computer science, we use _truth tables_. Which show every possi
 output of various functions. These tables help us visualize how different combinations of `true` and `false` are used in
 boolean expressions.
 
-| X       | Y       | X AND Y | X OR Y  |
-|---------|---------|---------|---------|
-| `true`  | `true`  | `true`  | `true`  |
-| `true`  | `false` | `false` | `true`  |
-| `false` | `true`  | `false` | `true`  |
-| `false` | `false` | `false` | `false` |
-
 | X       | NOT X   |
 |---------|---------|
 | `true`  | `false` |
 | `false` | `true`  |
 
-The math community likes to use the letters `p`, `r`, and `q` for the variables, and other fancy symbols to represent "
-and", "or", and "not", but we are not going to worry about that. After all, they are just symbols to represent
+| X       | Y       | X AND Y | X OR Y  | (NOT X) AND Y | NOT (X AND Y) |
+|---------|---------|---------|---------|---------------|---------------|
+| `true`  | `true`  | `true`  | `true`  | `false`       | `false`       |
+| `true`  | `false` | `false` | `true`  | `false`       | `true`        |
+| `false` | `true`  | `false` | `true`  | `true`        | `true`        |
+| `false` | `false` | `false` | `false` | `false`       | `true`        |
+
+The math community likes to use the letters `p`, `r`, and `q` for the variables, and other fancy symbols to represent 
+"and", "or", and "not", but we are not going to worry about that. After all, they are just symbols to represent
 something! Most people are accustomed to using `x`, `y`, and `z` for variables, and I'll just use the full words for
 operations.
 
@@ -225,6 +225,8 @@ Create a few `boolean` variables:
 * Is `7` an even number?
 
 _Hint: Both of these should use `%` and `==`. You can always review previous lessons if you forgot how to do something!_
+
+_Hint #2: A number is even only if it is divisible by `2` with a remainder of `0`_
 
 Then create a few more `boolean` variables using boolean expressions:
 
