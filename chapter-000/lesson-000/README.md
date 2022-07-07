@@ -164,6 +164,7 @@ Yes! But not in this lesson.
 
 In this lesson, you:
 
+* Learned how to traverse this guide
 * Installed the Java Virtual Machine (JVM)
 * Installed the Java core library
 * Installed Intellij IDEA as your IDE

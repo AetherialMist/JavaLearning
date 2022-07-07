@@ -27,7 +27,7 @@ be very upset with current you. Below are some recommendations on where to creat
     3. Create a new folder called "JavaProjects"
 
 Feel free to put this folder where you want, as long as you remember where. Eventually, you will likely end up with
-dozens, if not hundreds, of sub-folders inside this projects-folder.
+dozens, if not hundreds, of sub-folders containing individual projects inside this main projects-folder.
 
 ## Create a New Intellij Project
 
@@ -39,6 +39,7 @@ dozens, if not hundreds, of sub-folders inside this projects-folder.
     * Make sure there are no spaces!
 4. Make sure the `Location` is inside your projects-folder created earlier.
     * For Windows and Mac users, the start may be replaced with `~\Documents\`, and that is okay.
+    * You can manually type the path, or use the little folder icon to the right to browse to a folder.
 5. Make sure the `Language` selected is `Java`.
 6. For the `Build System`: select `Intellij`
     * We will eventually explain build systems in more detail later, at which point we will switch to using `Maven`.
@@ -77,6 +78,8 @@ Let's break down some of the basics of an Intellij IDEA project window.
         2. The `src` folder: This is where you put your actual code. Only code inside this folder will be
            [compiled](../../terminology.md).
         3. The `HelloWorld.iml` file: This is more metadata for Intellij, you can ignore it.
+    * You can also ignore the `External Libraries` and `Scratches and Consoles` folders.
+        * The Java core library (talked about in the previous lesson) will show in the External Libraries folder.
 
 ---
 
@@ -144,9 +147,9 @@ JVM from being confused with where exactly the code is located. We will discuss 
 
 ### First Class File
 
-Now you are going to create your first Java Class file! You can 'right-click' on your new fancy package from above, and
-navigate to `New -> Java Class` and click on "Java Class". Again, a little text box pop-up will appear in the center of
-Intellij. Type in "HelloWorld", and click on "Class".
+Now you are going to create your first Java Class file! You can `right-click` on your new fancy package from above, and
+navigate to `New -> Java Class` and click on `Java Class`. Again, a little text box pop-up will appear in the center of
+Intellij. Type in "HelloWorld", and click on `Class`.
 
 ![CreateClass](images/CreateClass.png)
 
@@ -308,8 +311,8 @@ lesson, and even in programming careers.
 
 Again, I am sorry, but more hand wavy magic that will be explained later. For now, just understand that anything inside
 the parenthesis and quotation marks of `System.out.println("");` will appear in the output you saw before. Another
-small, but very important piece to remember, is that almost every line of code inside those inner curly braces needs to
-end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
+small, but **very important** piece to remember, is that almost every line of code inside those inner curly braces needs
+to end with a semicolon "`;`". The main exception being if the line ends with an open `{` or closed `}` curly brace.
 
 ## The Top Play Button
 
@@ -328,8 +331,13 @@ Hello to you too little program!
 
 ## Completed Folder
 
-Anytime there is code involved (almost all sections), a completed project will be included which you can reference if you
-ever get stuck. There will be a hyperlink at the bottom of each section leading to the completed code.
+Anytime there is code involved (almost all sections), a completed project will be included which you can reference if
+you ever get stuck. There will be a hyperlink at the bottom of each section leading to the completed code.
+
+## Challenges
+
+Sometimes I will include small challenges in a lesson. These are optional, but highly recommended to do. You can 
+think of these as ideas for you to practice any new concepts learned about in the lesson.
 
 ## Recap
 
@@ -353,8 +361,8 @@ become an expert programmer that understands everything over a single night. Yes
 programming and will learn it faster, but do NOT be discouraged. It takes time, effort, and a willingness to learn and
 practice!
 
-[Completed Code](completed)
+### [Completed Code](completed)
 
-[Challenges](challenges)
+### [Challenges](challenges)
 
-[Previous](../../chapter-000/lesson-000) | [Next](../lesson-001)
+### [Previous](../../chapter-000/lesson-000) | [Next](../lesson-001)
