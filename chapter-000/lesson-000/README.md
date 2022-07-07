@@ -64,7 +64,7 @@ over time, and is likely already different from the images shown here.
 Right below the last commit line, are the sub-folder, files, and "go back" link. In the picture above, there are 
 only three things:
 
-1. The "go back" sub-folder. This will take you to the previous breadcrumb we explained earlier; in this case 
+1. `..` The "go back" sub-folder. This will take you to the previous breadcrumb we explained earlier; in this case 
    `chapter-000`.
 2. `images` sub-folder. This is where I put images in each lesson, I could put other things in there though. The 
    names of folders and files are mostly meaningless (there are a few exceptions).
