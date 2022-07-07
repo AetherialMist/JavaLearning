@@ -41,7 +41,7 @@ _Don't click on the image above. The breadcrumbs in the image will not work._
 While looking at the various folders and files in this project, GitHub provides **_breadcrumbs_** near the top. On 
 this page, they are:
 
-`JavaLearning / chapter-000 / lesson-000 /`
+![Breadcrumbs](images/Breadcrumbs.png)
 
 The breadcrumbs contain an ordered list of items separated by a single forward slash `/`. Each item, except for the 
 last one (the far right) is a folder. The last item can be either a folder or an individual file.
@@ -54,7 +54,10 @@ And the `JavaLearning` link will take you all the way back to the very start.
 ### Last commit
 
 This is the next line under the breadcrumbs. It shows who the last person to edit this folder or file was, and a 
-little message to go with their change. For the most part, you can just ignore this line.
+little message to go with their change. For the most part, you can just ignore this line. The message will change 
+over time, and is likely already different from the images shown here.
+
+![LastCommit](images/LastCommit.png)
 
 ### Sub-Folders and Files
 
@@ -67,6 +70,8 @@ only three things:
    names of folders and files are mostly meaningless (there are a few exceptions).
 3. `README.md` what you are reading right now. As mentioned earlier, if a folder contains this specially named file, 
    then GitHub shows it while viewing the folder it is in. This filename is one of the exceptions previously mentioned.
+
+![SubFolders](images/SuubFoldersFiles.png)
 
 Later lessons may have more sub-folders and files in them. You can click on them in this top section to open those 
 folders and files. Just remember you have those breadcrumbs at the top to get back!
