@@ -9,4 +9,4 @@ This chapter is all about the fundamentals of programming and Java!
 * [1.4 - Variable Naming and Keywords](lesson-004)
 * [1.5 - Boolean Logic](lesson-005)
 * [1.6 - Intro to Methods, Classes, and Objects](lesson-006)
-* [1.7 - WIP](lesson-007)
+* [1.7 - WIP](lesson-008)

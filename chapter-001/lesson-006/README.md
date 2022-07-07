@@ -216,6 +216,7 @@ package aetherial;
 public class Printer {
 
     public void print(String message) {
+        // We can use the parameters as regular variables in our program!
         System.out.println(message);
     }
 
@@ -345,7 +346,21 @@ You created a Printer!
 Hello, world!
 ```
 
+## Recap
+
+In this lesson you learned about:
+
+* Creating your own types using classes
+  * With a default constructor
+* Creating your own methods
+  * With parameters
+* _Instantiating_ non-primitive types using the `new` keyword
+* Calling methods on non-primitive types
+
 ## Next Steps
+
+This was a pretty big lesson. A lot of new information. I encourage you to re-read this lesson at least a second 
+time, and experiment on your own. We will continue expending on classes and custom types in the next lesson.
 
 [Completed Code](completed)
 

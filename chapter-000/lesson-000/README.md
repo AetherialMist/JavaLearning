@@ -113,7 +113,7 @@ Java onto your computer. So let us install Java to get started.
 Well yes, kind of. What you are installing is called the [Java Virtual Machine](../../terminology.md) (JVM). The JVM is
 what actually runs your code; there are some steps in-between, but we will cover that much later. On top of that, you
 are downloading the Java core library. Java contains a massive [library](../../terminology.md) of code that you use to
-crete your code. Trust me, you do _not_ want to start from the very bottom.
+create your code. Trust me, you do _not_ want to start from the very bottom.
 
 As of writing this guide, Java 17 is the latest LTS version. So this guide will assume _at least_ the capabilities of
 version 17. When newer LTS versions are released, they generally only **add** more functionality to the language, rarely
